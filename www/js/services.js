@@ -8,21 +8,26 @@ angular.module('starter.services', [])
     id: 0,
     name: 'Lomme2',
     lastText: '4 étages',
+    url: 'dash',
     face: 'img/lomme2_photo.png'
+
   }, {
     id: 1,
     name: 'Bretagne',
     lastText: '1 étage',
+    url: 'bretagne',
     face: 'img/bretagne_photo.png'
   }, {
     id: 2,
     name: 'Tereneo-A',
     lastText: '4 étages',
+    url: '#',
     face: 'img/tereneo-a_photo.jpg'
   }, {
     id: 3,
     name: 'Tereneo-B',
     lastText: '4 étages',
+    url: '#',
     face: 'img/tereneo-a_photo.jpg'
   }];
 
