@@ -69,7 +69,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-        .state('tab.bretagne', {
+    .state('tab.bretagne', {
       url: '/bretagne',
       views: {
         'tab-bretagne': {
@@ -79,6 +79,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.map', {
+      url: '/map',
+      views: {
+        'tab-map': {
+          templateUrl: 'templates/tab-map.html',
+          controller: 'MapCtrl'
+        }
+      }
+    })
 
 
   .state('tab.account', {
