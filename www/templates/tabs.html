@@ -3,27 +3,26 @@ Create tabs with an icon and label, using the tabs-positive style.
 Each tab's child <ion-nav-view> directive will have its own
 navigation history that also transitions its views in and out.
 -->
-<ion-tabs class="tabs-icon-top tabs-color-active-positive {{$root.hideTabs}}" >
+<!-- <ion-tabs class="tabs-icon-top tabs-color-active-positive {{$root.hideTabs}}" >
 
-  <ion-tab title="Liste" icon-off="ion-ios-list-outline" icon-on="ion-ios-list" href="#/tab/chats">
+  <ion-tab title="Liste"  href="#/tab/chats">
     <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
 
-  <ion-tab title="Map" icon-off="ion-ios-list-outline" icon-on="ion-ios-list" href="#/tab/map">
+  <ion-tab title="Map" href="#/tab/map">
     <ion-nav-view name="tab-map"></ion-nav-view>
   </ion-tab>
+  
+ </ion-tabs> -->
 
-<!--   <ion-tab title="Lomme 2" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/dash" >
-    <ion-nav-view name="tab-dash"></ion-nav-view>
-  </ion-tab> -->
-<!-- 
-  <ion-tab title="Bretagne" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" href="#/tab/bretagne">
-    <ion-nav-view name="tab-bretagne" ></ion-nav-view>
-  </ion-tab> -->
+<ion-tabs class="tabs-striped tabs-top tabs-background-balanced tabs-color-light {{$root.hideTabs}}" >
 
-<!--   <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
+  <ion-tab title="Liste"  href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
- -->
+
+  <ion-tab title="Carte" href="#/tab/map">
+    <ion-nav-view name="tab-map"></ion-nav-view>
+  </ion-tab>
 
 </ion-tabs>

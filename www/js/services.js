@@ -29,7 +29,7 @@ angular.module('starter.services', [])
     marker : 'TA',
     lastText: '4 étages',
     url: '#',
-    face: 'img/tereneo-a_photo.jpg',
+    face: 'img/tereneo-a_photo.png',
     lng: '3.022',
     lat:'50.633'
   }, {
@@ -38,7 +38,7 @@ angular.module('starter.services', [])
     marker : 'TB',
     lastText: '4 étages',
     url: '#',
-    face: 'img/tereneo-a_photo.jpg',
+    face: 'img/tereneo-a_photo.png',
     lng: '3.020',
     lat:'50.631'
   }];
