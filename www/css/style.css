@@ -899,6 +899,10 @@ button:focus {
     height: 100%;
 }
 
+.building-image {
+ border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; width: 100%; height: 130px; 
+}
+
 .pin--active .icon--logo,
 .pin:hover .icon--logo {
 	fill-opacity: 1;

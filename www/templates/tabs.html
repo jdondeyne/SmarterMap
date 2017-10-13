@@ -15,14 +15,14 @@ navigation history that also transitions its views in and out.
   
  </ion-tabs> -->
 
-<ion-tabs class="tabs-striped tabs-bottom tabs-background-balanced tabs-color-light {{$root.hideTabs}}">
+<ion-tabs class="tabs-striped tabs-bottom tabs-background-balanced tabs-color-light tabs-icon-left {{$root.hideTabs}}">
 
-  <ion-tab title="Liste"  href="#/tab/chats">
+  <ion-tab title="Bâtiments"  href="#/tab/chats" icon-off="ion-ios-home-outline" icon-on="ion-ios-home">
     <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
 
 
-  <ion-tab title="Carte" href="#/tab/map">
+  <ion-tab title="Carte" href="#/tab/map" icon-off="ion-ios-navigate-outline" icon-on="ion-ios-navigate">
     <ion-nav-view name="tab-map"></ion-nav-view>
   </ion-tab>
 
