@@ -11,7 +11,8 @@ angular.module('starter.services', [])
     marker : 'L',
     lastText: '4 étages',
     url: 'dash',
-    face: 'img/batiment-lomme@2x.png',
+    face: 'img/batiment-lommepng',
+    headerImg: 'img/batiment-lomme@2x.png',
     coord : [
       {
         lng : 3.018193244934082,
@@ -38,7 +39,8 @@ angular.module('starter.services', [])
     marker : 'B',
     lastText: '1 étage',
     url: 'bretagne',
-    face: 'img/batiment-bretagne@2x.png',
+    face: 'img/batiment-bretagne.png',
+    headerImg: 'img/batiment-bretagne@2x.png',
     coord : [
       {
         lng : 3.0210404098033905,
@@ -64,7 +66,8 @@ angular.module('starter.services', [])
     marker : 'TA',
     lastText: '4 étages',
     url: '#',
-    face: 'img/batiment-terraneo-a@2x.png',
+    face: "img/batiment-terraneo-a.png",
+    headerImg: 'img/batiment-terraneo-a@2x.png',
     coord : [
       {
         lng : 3.022018074989319,
@@ -91,7 +94,8 @@ angular.module('starter.services', [])
     marker : 'TB',
     lastText: '4 étages',
     url: '#',
-    face: 'img/batiment-terraneo-b@2x.png',
+    face: 'img/batiment-terraneo-b.png',
+    headerImg: 'img/batiment-terraneo-b@2x.png',
     coord : [
       {
        

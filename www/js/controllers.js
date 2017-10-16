@@ -449,7 +449,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
                 polygon.addListener('click', function (event) {
                     info.setContent(template({
                         title: b.name,
-                        bgImg: b.face,
+                        bgImg: b.headerImg,
                         body: b.desc,
                         buttonUrl: b.url
                     }));
