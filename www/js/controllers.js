@@ -13,371 +13,462 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
      template: 'Commune française située en région hauts-de-France.'
     });
 
-  };
+        };
 
 
-})
+    })
+
+    .controller('ChatsCtrl', function ($scope, Chats) {
+        // With the new view caching in Ionic, Controllers are only called
+        // when they are recreated or on app start, instead of every page change.
+        // To listen for when this page is active (for example, to refresh data),
+        // listen for the $ionicView.enter event:
+        //
+        //$scope.$on('$ionicView.enter', function(e) {
+        //});
+
+        $scope.chats = Chats.all();
+        $scope.remove = function (chat) {
+            Chats.remove(chat);
+        };
+    })
+
+    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
+        $scope.chat = Chats.get($stateParams.chatId);
+    })
+
+    .controller('BretagneCtrl', function ($scope) {
+        $scope.$on("$ionicView.enter", function () {
+            callMain();
+        });
 
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
+    })
 
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-})
-
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
-})
-
-.controller('BretagneCtrl', function($scope) {
-    $scope.$on("$ionicView.enter", function() {
-    callMain();
-  });
-
-  
-})
-
-/*   //cordova geolocation example, need permissions
-
-.controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
-  var options = {timeout: 10000, enableHighAccuracy: true};
- 
-  $cordovaGeolocation.getCurrentPosition(options).then(function(position){
- 
-    var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
- 
-    var mapOptions = {
-      center: latLng,
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
- 
-    $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
- 
-  }, function(error){
-    console.log("Could not get location");
-  });
-})*/
-
-.controller('MapCtrl', function($scope, Chats){
-  
-    //IOS API KEY = AIzaSyC9eUt14RtODdTmpwTqMkTAn4I8c1Vn40Q
-  
-    //ANDROID API KEY = AIzaSyCluAkVx1XEk3tODxRz91xwXif5sNRFVZQ
+    /*   //cordova geolocation example, need permissions
     
-      var latLng = new google.maps.LatLng(50.633, 3.0203);
-    
-      var mapOptions = {
+    .controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
+      var options = {timeout: 10000, enableHighAccuracy: true};
+     
+      $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+     
+        var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+     
+        var mapOptions = {
           center: latLng,
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP,
-          styles: [
-            {
-              "featureType": "all",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  }
-              ]
-          },
-          {
-              "featureType": "all",
-              "elementType": "labels.text.stroke",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  }
-              ]
-          },
-          {
-              "featureType": "all",
-              "elementType": "labels.icon",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  }
-              ]
-          },
-          {
-              "featureType": "landscape.man_made",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#a1f199"
-                  }
-              ]
-          },
-          {
-              "featureType": "landscape.natural.landcover",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#37bda2"
-                  }
-              ]
-          },
-          {
-              "featureType": "landscape.natural.terrain",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#37bda2"
-                  }
-              ]
-          },
-          {
-              "featureType": "poi.attraction",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "off"
-                  }
-              ]
-          },
-          {
-              "featureType": "poi.business",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#e4dfd9"
-                  }
-              ]
-          },
-          {
-              "featureType": "poi.business",
-              "elementType": "labels.icon",
-              "stylers": [
-                  {
-                      "visibility": "simplified"
-                  }
-              ]
-          },
-          {
-              "featureType": "poi.park",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#37bda2"
-                  }
-              ]
-          },
-          {
-              "featureType": "poi.sports_complex",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "off"
-                  }
-              ]
-          },
-          {
-              "featureType": "poi.sports_complex",
-              "elementType": "geometry.stroke",
-              "stylers": [
-                  {
-                      "visibility": "off"
-                  }
-              ]
-          },
-          {
-              "featureType": "road",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#84b09e"
-                  }
-              ]
-          },
-          {
-              "featureType": "road",
-              "elementType": "geometry.stroke",
-              "stylers": [
-                  {
-                      "color": "#fafeb8"
-                  },
-                  {
-                      "weight": "1.25"
-                  }
-              ]
-          },
-          {
-              "featureType": "road.highway",
-              "elementType": "labels",
-              "stylers": [
-                  {
-                      "visibility": "off"
-                  }
-              ]
-          },
-          {
-              "featureType": "road.highway",
-              "elementType": "labels.text",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  }
-              ]
-          },
-          {
-              "featureType": "road.highway",
-              "elementType": "labels.text.fill",
-              "stylers": [
-                  {
-                      "color": "#eae0e0"
-                  }
-              ]
-          },
-          {
-              "featureType": "road.highway",
-              "elementType": "labels.text.stroke",
-              "stylers": [
-                  {
-                      "color": "#846868"
-                  },
-                  {
-                      "saturation": "0"
-                  }
-              ]
-          },
-          {
-              "featureType": "road.highway",
-              "elementType": "labels.icon",
-              "stylers": [
-                  {
-                      "visibility": "off"
-                  }
-              ]
-          },
-          {
-              "featureType": "transit.line",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "off"
-                  }
-              ]
-          },
-          {
-              "featureType": "transit.station.airport",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  },
-                  {
-                      "color": "#ade8a0"
-                  }
-              ]
-          },
-          {
-              "featureType": "transit.station.bus",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  }
-              ]
-          },
-          {
-              "featureType": "transit.station.rail",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "visibility": "on"
-                  }
-              ]
-          },
-          {
-              "featureType": "water",
-              "elementType": "geometry.fill",
-              "stylers": [
-                  {
-                      "color": "#5ddad6"
-                  }
-              ]
-          }
-        ]
-      };
-    
-      $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    
-      //Wait until the map is loaded
-      google.maps.event.addListenerOnce($scope.map, 'idle', function(){
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+     
+        $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+     
+      }, function(error){
+        console.log("Could not get location");
+      });
+    })*/
+
+    .controller('MapCtrl', function ($scope, Chats) {
+
+        //IOS API KEY = AIzaSyC9eUt14RtODdTmpwTqMkTAn4I8c1Vn40Q
+
+        //ANDROID API KEY = AIzaSyCluAkVx1XEk3tODxRz91xwXif5sNRFVZQ
+
+        var latLng = new google.maps.LatLng(50.633, 3.0203);
+
+        var mapOptions = {
+            center: latLng,
+            draggable: true,
+            zoom: 16,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,            
+            styles: [
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.man_made",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#a1f199"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural.landcover",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#37bda2"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape.natural.terrain",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#37bda2"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.attraction",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.business",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#e4dfd9"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.business",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#37bda2"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.sports_complex",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi.sports_complex",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#84b09e"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#fafeb8"
+                        },
+                        {
+                            "weight": "1.25"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#eae0e0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#846868"
+                        },
+                        {
+                            "saturation": "0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.line",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.airport",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        },
+                        {
+                            "color": "#ade8a0"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.bus",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit.station.rail",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#5ddad6"
+                        }
+                    ]
+                }
+            ]
+        };
+
+        $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+        //creation du bouton centerControl
+        var centerControlDiv = document.createElement('div');
+        var centerControl = new CenterControl(centerControlDiv, $scope.map);
+
+        centerControlDiv.index = -5;
+        $scope.map.controls[google.maps.ControlPosition.TOP_CENTER].push(centerControlDiv);
+
+
+
+        /**
+       * The CenterControl adds a control to the map that recenters the map on
+       * Chicago.
+       * This constructor takes the control DIV as an argument.
+       * @constructor
+       */
+      function CenterControl(controlDiv, map) {
         
-      //recuperation des batiments
-      $scope.building = Chats.all();
-       
-      for(i in $scope.building){
-    
-        var b = $scope.building[i];
-                
-        var marker = new google.maps.Marker({
-            map: $scope.map,
-            animation: google.maps.Animation.DROP,
-            label: b.marker,         
-            position: new google.maps.LatLng(b.lat, b.lng)
-        }); 
-
-        var content = '<div class="mapsInfo"><h3>'+b.name+'</h3><img src="'+b.face+'" width="100px" heigth="30px"><div><a href="#/tab/'+b.url+'">Indoor view</a></div></div>';
-      
-        var infoWindow = new google.maps.InfoWindow();
-          
-        google.maps.event.addListener(marker,'click', (function(marker,content,infoWindow){ 
-          return function() {
-            infoWindow.setContent(content);
-            infoWindow.open($scope.map,marker);
-          };
-        })(marker,content,infoWindow));  
-
-
-      }
-    
-        google.maps.event.addListener($scope.map, 'click', function(e){
-          console.log(e.latLng.toJSON());
-        });
+                // Set CSS for the control border.
+                var controlUI = document.createElement('div');
+                controlUI.style.backgroundColor = '#fff';
+                controlUI.style.border = '2px solid #fff';
+                controlUI.style.borderRadius = '3px';
+                controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+                controlUI.style.cursor = 'pointer';
+                controlUI.style.marginBottom = '22px';
+                controlUI.style.textAlign = 'center';
+                controlUI.title = 'Click to recenter the map';
+                controlDiv.appendChild(controlUI);
         
-        /*
-        Object { lat: 50.63311128649952, lng: 3.022511601448059 }  controllers.js:116:7
-        Object { lat: 50.63282547028087, lng: 3.0217444896698 }  controllers.js:116:7
-        Object { lat: 50.632372924380604, lng: 3.022168278694153 }  controllers.js:116:7
-        Object { lat: 50.632675756329924, lng: 3.02298903465271 }
-        */
-    
-        // Define the LatLng coordinates for the polygon's path.
-        var terraneoCoords = [
-          {lat: 50.6331, lng: 3.0225},
-          {lat: 50.6328, lng: 3.0217},
-          {lat: 50.6323, lng: 3.0221},
-          {lat: 50.6326, lng: 3.0229}
-        ];
-    
-        // Construct the polygon.
-        var terraneoForm = new google.maps.Polygon({
-          paths: terraneoCoords,
-          strokeColor: '#FF0000',
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: '#FF0000',
-          fillOpacity: 0.35
-        });
-        terraneoForm.setMap($scope.map);
-  
-    }); //end map listener
-  
-})
+                // Set CSS for the control interior.
+                var controlText = document.createElement('div');
+                controlText.style.color = 'rgb(25,25,25)';
+                controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+                controlText.style.fontSize = '16px';
+                controlText.style.lineHeight = '38px';
+                controlText.style.paddingLeft = '5px';
+                controlText.style.paddingRight = '5px';
+                controlText.innerHTML = 'Center Map';
+                controlUI.appendChild(controlText);
+        
+                // Setup the click event listeners: simply set the map to Chicago.
+                controlUI.addEventListener('click', function() {
+                  map.setCenter(latLng);
+                });
+        
+        }
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-});
+        //Wait until the map is loaded
+        google.maps.event.addListenerOnce($scope.map, 'idle', function () {
+
+
+            // Set up handle bars
+            var template = Handlebars.compile($('#marker-content-template').html());
+
+            var closeDelayed = false;
+            var closeDelayHandler = function () {
+                $(info.getWrapper()).removeClass('active');
+                setTimeout(function () {
+                    closeDelayed = true;
+                    info.close();
+                }, 300);
+            };
+
+            // Add a Snazzy Info Window to the marker
+            info = new SnazzyInfoWindow({
+                map: $scope.map,
+                position: latLng,
+                wrapperClass: 'custom-window',
+                offset: {
+                    top: '-15px'
+                },
+                border: false,
+                /*closeButtonMarkup: '<button type="button" class="custom-close">&#215;</button>',
+                content: template({
+                    title: b.title,
+                    subtitle: '',
+                    bgImg: b.face,
+                    body: '<p>La description de mon batiment </p>'
+                }),*/
+                callbacks: {
+                    open: function () {
+                        $(this.getWrapper()).addClass('open');
+                    },
+                    afterOpen: function () {
+                        var wrapper = $(this.getWrapper());
+                        wrapper.addClass('active');
+                        wrapper.find('.custom-close').on('click', closeDelayHandler);
+                    },
+                    beforeClose: function () {
+                        if (!closeDelayed) {
+                            closeDelayHandler();
+                            return false;
+                        }
+                        return true;
+                    },
+                    afterClose: function () {
+                        var wrapper = $(this.getWrapper());
+                        wrapper.find('.custom-close').off();
+                        wrapper.removeClass('open');
+                        closeDelayed = false;
+                    }
+                }
+            });
+
+
+            //recuperation des batiments
+            $scope.building = Chats.all();
+
+
+            for (i in $scope.building) {
+
+                var b = $scope.building[i];
+
+                // Construct the polygon.
+                var buildingForm = new google.maps.Polygon({
+                    paths: b.coord,
+                    strokeColor: '#F4FA58',
+                    strokeOpacity: 0.9,
+                    strokeWeight: 2,
+                    fillColor: '#F4FA58',
+                    fillOpacity: 0.80
+                });
+                //set polygon on the map
+                buildingForm.setMap($scope.map);
+
+                attachInfoWindow(buildingForm, b);
+
+
+            }
+
+            //function to attach infowindow on polygon
+            function attachInfoWindow(polygon, b) {
+
+                // Set up a close delay for CSS animations
+                polygon.addListener('click', function (event) {
+                    info.setContent(template({
+                        title: b.name,
+                        bgImg: b.face,
+                        body: b.desc,
+                        buttonUrl: b.url
+                    }));
+                    info.setPosition(event.latLng);
+                    info.open();
+                });
+
+            }
+
+            google.maps.event.addListener($scope.map, 'click', function (e) {
+                console.log(e.latLng.toJSON());
+            });
+
+        }); //end map listener
+
+    })
+
+    .controller('AccountCtrl', function ($scope) {
+        $scope.settings = {
+            enableFriends: true
+        };
+    });
