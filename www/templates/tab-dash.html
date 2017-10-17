@@ -3,9 +3,9 @@
 
     <svg class="hidden">
           <defs>
-            <symbol id="icon-pin" viewBox="0 0 200 300">
+            <symbol id="icon-pin" viewBox="0 0 150 150">
               <title>pin</title>
-              <path d="M100,21.78A85,85,0,0,0,15.18,106.6c0,18.85,12.08,49.52,36.76,93.9,17.48,31.36,34.7,57.49,35.47,58.6L100,278.22l12.59-19.11c0.69-1.11,18-27.25,35.47-58.6,24.76-44.38,36.76-75.06,36.76-93.9A85,85,0,0,0,100,21.78Z" />
+              <path d="M133.3,0H11.2C4.8,0-0.4,5-0.4,11.2v124.1c0,6.2,5.2,11.2,11.6,11.2h1c21.9,0,42,11.6,52.4,30.2l0.1,0.1  c3.4,6.2,12.6,6.2,16,0l0.1-0.1c10.3-18.6,30.5-30.2,52.4-30.2h0.2c6.4,0,11.6-5,11.6-11.2V11.2C144.9,5,139.7,0,133.3,0z" />
             </symbol>
             <symbol class="icon-pin2" viewBox="0 0 20 20">
               <path d="M17.211,3.39H2.788c-0.22,0-0.4,0.18-0.4,0.4v9.614c0,0.221,0.181,0.402,0.4,0.402h3.206v2.402c0,0.363,0.429,0.533,0.683,0.285l2.72-2.688h7.814c0.221,0,0.401-0.182,0.401-0.402V3.79C17.612,3.569,17.432,3.39,17.211,3.39M16.811,13.004H9.232c-0.106,0-0.206,0.043-0.282,0.117L6.795,15.25v-1.846c0-0.219-0.18-0.4-0.401-0.4H3.189V4.19h13.622V13.004z"></path>
@@ -551,24 +551,30 @@
               <div class="content__item" data-space="1.01" data-category="1">
                 <h3 class="content__item-title">Salle Bouvines</h3>
                 <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 6:30AM &mdash; 11:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 5738902</span>
-                  </p>
                   <p>
-                  <button ion-button ng-click="saviezVous('Bouvines')">Le saviez-vous?</button>
+                  <button class="button icon-left ion-ios-help-outline button-light" ng-click="saviezVous('Bouvines')">Le saviez-vous?</button>
                   </p>
-                  <p class="content__desc">Salle de réunion - capacité : 3 personnes - Teléphone inclus.</p>
+                  <p class="content__desc">Salle de réunion.</p>
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px;" >
+                      <a class="button icon-left ion-ios-people button-light" style="font-size: 20px;">3</a>
+                      <a class="button icon-left ion-monitor button-light" style="font-size: 20px;"><i class="ion-close"></i></a>
+                      <a class="button icon-left ion-android-call button-light" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
+                    </div> 
+                  </p>
                 </div>
               </div>
               <div class="content__item" data-space="1.02" data-category="1">
                 <h3 class="content__item-title">Salle Béthune</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p>
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 7:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 7822786</span>
+                    <div class="button-bar" style="padding: 10px;" >
+                      <a class="button icon-left ion-ios-people button-light" style="font-size: 20px;">6</a>
+                      <a class="button icon-left ion-monitor button-light" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
+                      <a class="button icon-left ion-android-call button-light" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
+                    </div> 
                   </p>
-                  <p class="content__desc">Salle de réunion - capacité : 6 personnes - Teléphone inclus.</p>
                 </div>
               </div>
               <div class="content__item" data-space="1.03" data-category="1">

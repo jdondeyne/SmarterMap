@@ -888,6 +888,7 @@ button:focus {
 	fill-opacity: 0.6;
 	-webkit-transition: fill-opacity 0.3s;
 	transition: fill-opacity 0.3s;
+	margin-top: 5px;
 }
 
 .scroll {
