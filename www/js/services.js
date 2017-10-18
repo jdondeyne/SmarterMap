@@ -10,7 +10,7 @@ angular.module('starter.services', [])
     marker : 'L',
     lastText: '4 étages',
     url: 'dash',
-    face: 'img/lomme2_photo.png',
+    face: 'img/batiment-lomme2.png',
     lng: '3.018',
     lat:'50.632'
 
@@ -20,25 +20,25 @@ angular.module('starter.services', [])
     marker : 'B',
     lastText: '1 étage',
     url: 'bretagne',
-    face: 'img/bretagne_photo.png',
+    face: 'img/batiment-bretagne.png',
     lng: '3.021',
     lat:'50.634'
   }, {
     id: 2,
-    name: 'Tereneo-A',
+    name: 'Terraneo-A',
     marker : 'TA',
     lastText: '4 étages',
     url: '#',
-    face: 'img/tereneo-a_photo.png',
+    face: 'img/batiment-terraneo-a.png',
     lng: '3.022',
     lat:'50.633'
   }, {
     id: 3,
-    name: 'Tereneo-B',
+    name: 'Terraneo-B',
     marker : 'TB',
     lastText: '4 étages',
     url: '#',
-    face: 'img/tereneo-a_photo.png',
+    face: 'img/batiment-terraneo-b.png',
     lng: '3.020',
     lat:'50.631'
   }];

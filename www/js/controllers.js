@@ -1,15 +1,17 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
-.controller('DashCtrl', function($scope, $stateParams, $ionicPopup, $timeout) {
+.controller('IndexCtrl', function($scope, $stateParams) {
+
+})
+
+.controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
 
   $scope.$on("$ionicView.enter", function() {
     callMain();
+
   });
 
 
-    $timeout(function() {
-        angular.element('#search').triggerHandler('click');
-    }, 4000);
 
   $scope.saviezVous = function(nomVille){
 

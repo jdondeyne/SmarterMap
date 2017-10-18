@@ -38,7 +38,7 @@
                 bottom: '@?'},
             template: '<ul id="floating-button" ng-class="{\'center\': isCentered}" ng-style="{\'bottom\' : \'{{bottom}}\' }">' +
                     '<li ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
-                    '<a ng-href="#/tab/dash" ng-click="triggerClick()"><span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text" ></span></span><i class="icon menu-icon" ng-class="{ \'{{icon}}\' : true}" ng-style="{\'color\': iconColor }"></i></a>' +
+                    '<a ng-href="#/tab/dash"><span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text" ></span></span><i class="icon menu-icon" ng-class="{ \'{{icon}}\' : true}" ng-style="{\'color\': iconColor }"></i></a>' +
                     '</li>' +
                     '</ul>',
             replace: false,
@@ -60,12 +60,6 @@
         } else {
             $scope.bottom = $scope.bottom || '20px';
         }
-/*        $scope.triggerClick = function(){
-            $timeout(function() {
-                angular.element('#search').triggerHandler('click');
-            }, 0);
-        };*/
-
     }
 
     function ionFloatingMenu() {
