@@ -36,9 +36,9 @@
                 text: '@?',
                 textClass: '@?',
                 bottom: '@?'},
-            template: '<ul ng-click="click()" id="floating-button" ng-class="{\'center\': isCentered}" ng-style="{\'bottom\' : \'{{bottom}}\' }">' +
+            template: '<ul id="floating-button" ng-class="{\'center\': isCentered}" ng-style="{\'bottom\' : \'{{bottom}}\' }">' +
                     '<li ng-class="buttonClass" ng-style="{\'background-color\': buttonColor }">' +
-                    '<a><span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text"></span></span><i class="icon menu-icon" ng-class="{ \'{{icon}}\' : true}" ng-style="{\'color\': iconColor }"></i></a>' +
+                    '<a ng-href="#/tab/dash" ng-click="triggerClick()"><span ng-if="text" class="label-container"><span class="label" ng-class="textClass" ng-bind="text" ></span></span><i class="icon menu-icon" ng-class="{ \'{{icon}}\' : true}" ng-style="{\'color\': iconColor }"></i></a>' +
                     '</li>' +
                     '</ul>',
             replace: false,
@@ -48,7 +48,7 @@
     }
 
     ionFloatingButtonCtrl.$inject = ['$scope'];
-    function ionFloatingButtonCtrl($scope) {
+    function ionFloatingButtonCtrl($scope, $timeout) {
         $scope.buttonColor = $scope.buttonColor || '#2AC9AA';
         $scope.icon = $scope.icon || 'ion-plus';
         $scope.iconColor = $scope.iconColor || '#fff';
@@ -60,6 +60,12 @@
         } else {
             $scope.bottom = $scope.bottom || '20px';
         }
+/*        $scope.triggerClick = function(){
+            $timeout(function() {
+                angular.element('#search').triggerHandler('click');
+            }, 0);
+        };*/
+
     }
 
     function ionFloatingMenu() {

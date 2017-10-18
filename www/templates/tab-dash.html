@@ -541,7 +541,7 @@
               <!-- /levels -->
             </div>
             <!-- /mall -->
-            <button class="boxbutton boxbutton--dark open-search" aria-label="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+            <button id="search" class="boxbutton boxbutton--dark open-search" aria-label="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
             <nav class="mallnav mallnav--hidden">
               <button class="boxbutton mallnav__button--up" aria-label="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
               <button class="boxbutton boxbutton--dark mallnav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
@@ -552,14 +552,14 @@
                 <h3 class="content__item-title">Salle Bouvines</h3>
                 <div class="content__item-details">
                   <p>
-                  <button class="button icon-left ion-ios-help-outline button-light" ng-click="saviezVous('Bouvines')">Le saviez-vous?</button>
+                  <button id="saviez" class="button icon-left ion-ios-help-outline button-royal" ng-click="saviezVous('Bouvines')">Le saviez-vous?</button>
                   </p>
                   <p class="content__desc">Salle de réunion.</p>
                   <p class="content__meta">
                     <div class="button-bar" style="padding: 10px;" >
-                      <a class="button icon-left ion-ios-people button-light" style="font-size: 20px;">3</a>
-                      <a class="button icon-left ion-monitor button-light" style="font-size: 20px;"><i class="ion-close"></i></a>
-                      <a class="button icon-left ion-android-call button-light" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
+                      <a class="button icon-left ion-ios-people button-royal" style="font-size: 20px;">3</a>
+                      <a class="button icon-left ion-monitor button-royal" style="font-size: 20px;"><i class="ion-close"></i></a>
+                      <a class="button icon-left ion-android-call button-royal" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
                     </div> 
                   </p>
                 </div>
@@ -570,9 +570,9 @@
                   <p class="content__desc">Salle de réunion.</p>
                   <p class="content__meta">
                     <div class="button-bar" style="padding: 10px;" >
-                      <a class="button icon-left ion-ios-people button-light" style="font-size: 20px;">6</a>
-                      <a class="button icon-left ion-monitor button-light" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
-                      <a class="button icon-left ion-android-call button-light" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
+                      <a class="button icon-left ion-ios-people button-royal" style="font-size: 20px;">6</a>
+                      <a class="button icon-left ion-monitor button-royal" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
+                      <a class="button icon-left ion-android-call button-royal" style="font-size: 20px;"><i class="ion-checkmark"></i></a>
                     </div> 
                   </p>
                 </div>
@@ -814,7 +814,7 @@
           <!-- /main -->
           <aside class="spaces-list" id="spaces-list">
             <div class="search">
-              <input class="search__input" placeholder="Search..." />
+              <input class="search__input" placeholder="Tapez votre recherche..." />
               <button class="boxbutton boxbutton--darker close-search" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
             </div>
             <span class="label">
