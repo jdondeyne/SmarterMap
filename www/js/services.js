@@ -11,7 +11,7 @@ angular.module('starter.services', [])
     marker : 'L',
     lastText: '4 étages',
     url: 'dash',
-    face: 'img/batiment-lommepng',
+    face: 'img/batiment-lomme2.png',
     headerImg: 'img/batiment-lomme@2x.png',
     coord : [
       {
@@ -31,6 +31,7 @@ angular.module('starter.services', [])
         lat : 50.632750358181134
       }
     ]
+
 
   }, {
     id: 1,

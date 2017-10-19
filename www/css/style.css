@@ -418,15 +418,15 @@ button:focus {
 	padding: 0;
 	color: #fff;
 	border: 0;
-	background: #d7d7dc;
+	background: #a28bed;
 }
 
 .boxbutton--dark {
-	background: #c4c4c7;
+	background: #6748CC;
 }
 
 .boxbutton--darker {
-	background: #2c2c2f;
+	background: #3e2b7c;
 }
 
 .boxbutton--alt {
@@ -508,11 +508,14 @@ button:focus {
 	height: 100%;
 	padding: 3em;
 	text-align: center;
-	background: #d7d7dc;
+	background: #d7d7d7;
 	-webkit-transition: -webkit-transform 0.8s;
 	transition: transform 0.8s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+/*	border-top-style: solid;
+	border-color: #6748CC;
+	border-width: 1px;*/
 }
 
 .content--open .content__item {
@@ -636,7 +639,7 @@ button:focus {
 	padding: 1.315em 2em;
 	color: #fff;
 	border: 0;
-	background: #515158;
+	background: #6748CC;
 	border-radius: 0;
 }
 
@@ -888,6 +891,7 @@ button:focus {
 	fill-opacity: 0.6;
 	-webkit-transition: fill-opacity 0.3s;
 	transition: fill-opacity 0.3s;
+	margin-top: 5px;
 }
 
 .scroll {
@@ -1052,6 +1056,10 @@ button:focus {
 	.custom-header,
 	.custom-body {
 	  padding: 5px 15px; } }
+
+.building-image {
+ border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; width: 100%; height: 50%; 
+}
 
 .pin--active .icon--logo,
 .pin:hover .icon--logo {

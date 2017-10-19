@@ -1,10 +1,17 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
+.controller('IndexCtrl', function($scope, $stateParams) {
+
+})
+
 .controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
 
   $scope.$on("$ionicView.enter", function() {
     callMain();
+
   });
+
+
 
   $scope.saviezVous = function(nomVille){
 
