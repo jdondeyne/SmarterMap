@@ -1,7 +1,6 @@
-<ion-view view-title="Smarter Map">
+<!-- <ion-view view-title="Smarter Map">
   <ion-content>
     <ion-list>
-      <!-- <ion-item class="item item-thumbnail-left" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}"> -->
       <ion-item class="item item-thumbnail-left" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/{{chat.url}}">  
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
@@ -10,3 +9,35 @@
     </ion-list>
   </ion-content>
 </ion-view>
+ -->
+
+<ion-view view-title="Smarter Map">
+  <ion-content>
+    <div class="card" style="margin:0;margin-bottom: 10px;">
+      <div class="item item-text-wrap" style="background-color: #6748CC;">
+        <h1 style="color: #FFF;">Bonjour IBMer!</h1>
+        <p style="color: #FFF;">Quel bâtiment souhaitez-vous consulter?</p>
+      </div>
+    </div>
+
+   <!--  <h3 style="padding:5px;">Quel bâtiment souhaitez-vous consulter?</h3> -->
+
+  <ion-list ng-repeat="chat in chats" style="  width: 50%; display: inline-block;">
+    <ion-item ng-if="$even" style="border-style: none;" ng-href="#/tab/{{chat.url}}">
+        <img class="building-image" ng-src="{{chat.face}}" >
+      <p>
+        {{chat.name}}
+      </p>
+    </ion-item>
+    <ion-item ng-if="$odd" style="border-style: none;"  ng-href="#/tab/{{chat.url}}">
+      <img class="building-image" ng-src="{{chat.face}}">
+      <p>
+        {{chat.name}}
+      </p>
+    </ion-item>
+  </ion-list>
+
+  </ion-content>
+</ion-view>
+
+
