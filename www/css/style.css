@@ -1090,22 +1090,26 @@ button:focus {
 .pin--2-9 { top: 45vmin; left: 59vmin; }
 
 /* Pins for floor 3 */
-.pin--3-1 { top: 17vmin; left: 15vmin; }
-.pin--3-2 { top: 42vmin; left: 5vmin; }
-.pin--3-3 { top: 19vmin; left: 85vmin; }
-.pin--3-4 { top: 61vmin; left: 57vmin; }
-.pin--3-5 { top: 58vmin; left: 25vmin; }
-.pin--3-6 { top: 30vmin; left: 57vmin; }
-.pin--3-7 { top: 32vmin; left: 37vmin; }
+.pin--3-1 { top: 25vmin; left: 20vmin; }
+.pin--3-2 { top: 45vmin; left: 20vmin; }
+.pin--3-3 { top: 22vmin; left: 77vmin; }
+.pin--3-4 { top: 42vmin; left: 77vmin; }
+.pin--3-5 { top: 45vmin; left: 40vmin; }
+.pin--3-6 { top: 32vmin; left: 40vmin; }
+.pin--3-7 { top: 32vmin; left: 59vmin; }
+.pin--3-8 { top: 20vmin; left: 40vmin; }
+.pin--3-9 { top: 45vmin; left: 59vmin; }
 
 /* Pins for floor 4 */
-.pin--4-1 { top: 55vmin; left: 21vmin; }
-.pin--4-2 { top: 18vmin; left: 20vmin; }
-.pin--4-3 { top: 21vmin; left: 88vmin; }
-.pin--4-4 { top: 52vmin; left: 74vmin; }
-.pin--4-5 { top: 33vmin; left: 38vmin; }
-.pin--4-6 { top: 39vmin; left: 56vmin; }
-.pin--4-7 { top: 58vmin; left: 10vmin; }
+.pin--4-1 { top: 25vmin; left: 20vmin; }
+.pin--4-2 { top: 45vmin; left: 20vmin; }
+.pin--4-3 { top: 22vmin; left: 77vmin; }
+.pin--4-4 { top: 42vmin; left: 77vmin; }
+.pin--4-5 { top: 45vmin; left: 40vmin; }
+.pin--4-6 { top: 32vmin; left: 40vmin; }
+.pin--4-7 { top: 32vmin; left: 59vmin; }
+.pin--4-8 { top: 20vmin; left: 40vmin; }
+.pin--4-9 { top: 45vmin; left: 59vmin; }
 
 /* Mobile compatability */
 .open-search,
