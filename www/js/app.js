@@ -80,6 +80,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
 
+    .state('tab.terraneo-a', {
+      url: '/terraneo-a',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-terraneo-a.html',
+          controller: 'TerraneoaCtrl'
+        }
+      }
+    })
+
+    .state('tab.terraneo-b', {
+      url: '/terraneo-b',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-terraneo-b.html',
+          controller: 'TerraneobCtrl'
+        }
+      }
+    })
+
   .state('tab.map', {
     url: '/map',
     views: {

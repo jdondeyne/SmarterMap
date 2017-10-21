@@ -12,7 +12,6 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
   });
 
 
-
   $scope.saviezVous = function(nomVille){
 
     var alertPopup = $ionicPopup.alert({
@@ -48,8 +47,18 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
         $scope.$on("$ionicView.enter", function () {
             callMain();
         });
+    })
 
+    .controller('TerraneoaCtrl', function ($scope) {
+        $scope.$on("$ionicView.enter", function () {
+            callMain();
+        });
+    })
 
+    .controller('TerraneobCtrl', function ($scope) {
+        $scope.$on("$ionicView.enter", function () {
+            callMain();
+        });
     })
 
     /*   //cordova geolocation example, need permissions

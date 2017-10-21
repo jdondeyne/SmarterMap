@@ -6,8 +6,8 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Lomme2',
-    desc: 'Le batiment Lomme2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
+    name: 'Lomme-2',
+    desc: 'Le batiment Lomme-2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
     marker : 'L',
     lastText: '4 étages',
     url: 'dash',
@@ -62,11 +62,11 @@ angular.module('starter.services', [])
     ]
   }, {
     id: 2,
-    name: 'Tereneo-A',
+    name: 'Terraneo-A',
     desc: 'Le Terraneo A est un batiment récemment construit au 102 rue des Templiers. Il accueille plusieurs équipes GBS/GTS. Dans ce batiment vous pourrez également trouver de nombreux espaces agiles.',
     marker : 'TA',
     lastText: '4 étages',
-    url: '#',
+    url: 'terraneo-a',
     face: "img/batiment-terraneo-a.png",
     headerImg: 'img/batiment-terraneo-a@2x.png',
     coord : [
@@ -90,11 +90,11 @@ angular.module('starter.services', [])
     ]
   }, {
     id: 3,
-    name: 'Tereneo-B',
+    name: 'Terraneo-B',
     desc: 'Le Terraneo B est le batiment voisin du Terraneo A situé dans la même rue. Il accueille les équipes GTS. Dans ce batiment vous pourrez également trouver de nombreux espaces agiles.',
     marker : 'TB',
     lastText: '4 étages',
-    url: '#',
+    url: 'terraneo-b',
     face: 'img/batiment-terraneo-b.png',
     headerImg: 'img/batiment-terraneo-b@2x.png',
     coord : [
