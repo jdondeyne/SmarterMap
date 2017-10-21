@@ -997,4 +997,40 @@ button:focus {
 		padding-right: 4em;
 		text-align: left;
 	}
+
+	 /*
+	CSS search
+	*/
+
+	.item-input-wrapper {
+		background-color: #6748CC;
+		width: 100%;
+		
+	}
+
+	.item-input-inset{
+		position : fixed;
+	}
+
+	.searchText {
+		color : #C1AED7;
+	}
+
+	.icon {
+		font-size: 27px;
+		line-height: 1.2;
+		padding-right: 6px;
+		padding-left: 6px;
+		
+	}
+
+	.ion-ios-search{
+		color : #C1AED7;
+	}
+
+	.ion-android-close{
+		color: #FFFFFF;
+	}
+
+
 }

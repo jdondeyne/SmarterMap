@@ -1,5 +1,33 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
+.directive('focus', function($timeout) {
+    return {
+      link: function(scope, element, attrs) {
+  
+        $timeout(function() {
+          element[0].focus(); 
+        });
+      }
+    };
+  })
+
+
+.controller('NavController', function($scope, $state){
+    
+    $scope.showSearch = function(){
+        console.log("dans showSearch");
+        console.log($state);
+        $state.go('tab.search');
+        
+    }
+    
+})
+
+.controller('SearchCtrl', function($scope){
+
+})
+
+
 .controller('IndexCtrl', function($scope, $stateParams) {
 
 })

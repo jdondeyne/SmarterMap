@@ -88,6 +88,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         controller: 'MapCtrl'
       }
     }
+  })
+  
+  .state('tab.search', {
+    url:'/search',
+    views:{
+      'tab-search': {
+        templateUrl: 'templates/tab-search.html',
+        controller: 'SearchCtrl'
+      }
+    } 
   });
 
 /*  .state('tab.account', {
