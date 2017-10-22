@@ -431,13 +431,13 @@ button:focus {
 	height: 2em;
 	margin: 0;
 	padding: 0;
-	color: #fff;
+	color: #6748CC;
 	border: 0;
 	background: #a28bed;
 }
 
 .boxbutton--dark {
-	background: #6748CC;
+	background: #fff;
 }
 
 .boxbutton--darker {
@@ -523,7 +523,7 @@ button:focus {
 	height: 100%;
 	padding: 3em;
 	text-align: center;
-	background: #d7d7d7;
+	background: #ffffff;
 	-webkit-transition: -webkit-transform 0.8s;
 	transition: transform 0.8s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -541,6 +541,9 @@ button:focus {
 .content__item--current {
 	-webkit-transform: translate3d(0,-100%,0);
 	transform: translate3d(0,-100%,0);
+    -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    0px -4px 3px rgba(50, 50, 50, 0.25);
+    box-shadow:         0px -4px 3px rgba(50, 50, 50, 0.25);
 }
 
 .content__item-title {
@@ -552,6 +555,7 @@ button:focus {
 	opacity: 0;
 	-webkit-transform: translate3d(0,-3em,0) translate3d(0,-100%,0);
 	transform: translate3d(0,-3em,0) translate3d(0,-100%,0);
+	text-align: left;
 }
 
 .content__item[data-category='1'] .content__item-title {
@@ -1074,6 +1078,18 @@ button:focus {
 
 .building-image {
  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; width: 100%; height: 50%; 
+}
+
+.notify-badge{
+    position: relative;
+    right: -20px;
+    top: 1rem;
+    background:blue;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:3px 7px;
+    font-size:15px;
 }
 
 .pin--active .icon--logo,
