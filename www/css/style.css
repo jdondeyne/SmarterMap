@@ -1003,9 +1003,12 @@ button:focus {
 	*/
 
 	.item-input-wrapper {
-		background-color: #6748CC;
+		background-color: #573D9D;
 		width: 100%;
-		
+	}
+
+	.bar.item-input-inset .item-input-wrapper input{
+		color: #FFFFFF;
 	}
 
 	.item-input-inset{
@@ -1013,7 +1016,7 @@ button:focus {
 	}
 
 	.searchText {
-		color : #C1AED7;
+		color : #FFFFFF;
 	}
 
 	.icon {
@@ -1021,6 +1024,8 @@ button:focus {
 		line-height: 1.2;
 		padding-right: 6px;
 		padding-left: 6px;
+		cursor: pointer;
+		margin-top: -5px;
 		
 	}
 
@@ -1030,6 +1035,35 @@ button:focus {
 
 	.ion-android-close{
 		color: #FFFFFF;
+		
+	}
+
+	.searchTitle {
+		color : #6748CC;
+		padding-top: 10px;
+		margin-bottom: 15px;
+		margin-left:15px;
+		font-size: 1.3em;
+		font-weight: 200;
+
+	}
+
+	.searchBloc{
+		margin-left : 15px;
+		margin-bottom: 0px;
+	}
+
+	.searchName {
+		color : #5B5A57;
+	}
+
+	.searchNum {
+		color : #C1AED7;
+		text-align: right;
+	}
+
+	.searchBadge{
+		text-align: center;
 	}
 
 

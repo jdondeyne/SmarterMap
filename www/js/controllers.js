@@ -15,16 +15,15 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 .controller('NavController', function($scope, $state){
     
     $scope.showSearch = function(){
-        console.log("dans showSearch");
-        console.log($state);
         $state.go('tab.search');
-        
     }
     
 })
 
-.controller('SearchCtrl', function($scope){
+.controller('SearchCtrl', function($scope, Chats){
 
+    $scope.building = Chats.all();
+    $scope.searchData= {};
 })
 
 
