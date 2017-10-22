@@ -1,16 +1,16 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
+.factory('Buildings', function() {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
+  var buildings = [{
     id: 0,
     name: 'Lomme-2',
     desc: 'Le batiment Lomme-2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
     marker : 'L',
     lastText: '4 étages',
-    url: 'dash',
+    url: 'lomme2',
     face: 'img/batiment-lomme2.png',
     headerImg: 'img/batiment-lomme@2x.png',
     coord : [
@@ -120,15 +120,15 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return chats;
+      return buildings;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    remove: function(building) {
+      buildings.splice(buildings.indexOf(building), 1);
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    get: function(buildingId) {
+      for (var i = 0; i < buildings.length; i++) {
+        if (buildings[i].id === parseInt(buildingId)) {
+          return buildings[i];
         }
       }
       return null;

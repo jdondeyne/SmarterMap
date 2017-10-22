@@ -1,10 +1,7 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
-.controller('IndexCtrl', function($scope, $stateParams) {
 
-})
-
-.controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
+  .controller('LommeCtrl', function($scope, $stateParams, $ionicPopup) {
 
   $scope.$on("$ionicView.enter", function() {
     callMain();
@@ -24,7 +21,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
     })
 
-    .controller('ChatsCtrl', function ($scope, Chats) {
+    .controller('BuildingsCtrl', function ($scope, Buildings) {
         // With the new view caching in Ionic, Controllers are only called
         // when they are recreated or on app start, instead of every page change.
         // To listen for when this page is active (for example, to refresh data),
@@ -33,15 +30,15 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
         //$scope.$on('$ionicView.enter', function(e) {
         //});
 
-        $scope.chats = Chats.all();
-        $scope.remove = function (chat) {
-            Chats.remove(chat);
+        $scope.buildings = Buildings.all();
+        $scope.remove = function (building) {
+            Buildings.remove(building);
         };
     })
 
-    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
+/*    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
         $scope.chat = Chats.get($stateParams.chatId);
-    })
+    })*/
 
     .controller('BretagneCtrl', function ($scope) {
         $scope.$on("$ionicView.enter", function () {
@@ -83,7 +80,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
       });
     })*/
 
-    .controller('MapCtrl', function ($scope, Chats) {
+    .controller('MapCtrl', function ($scope, Buildings) {
 
         //IOS API KEY = AIzaSyC9eUt14RtODdTmpwTqMkTAn4I8c1Vn40Q
 
@@ -434,7 +431,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
 
             //recuperation des batiments
-            $scope.building = Chats.all();
+            $scope.building = Buildings.all();
 
 
             for (i in $scope.building) {
