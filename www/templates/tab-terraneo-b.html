@@ -1,4 +1,4 @@
-<ion-view view-title="Smarter Map" cache-view="false" id="store-visit-wrapper" hide-tabs >
+<ion-view view-title="Smarter Map"  cache-view="false" id="store-visit-wrapper" hide-tabs >
   <ion-content class="">
 
     <svg class="hidden">
@@ -6,6 +6,9 @@
             <symbol id="icon-pin" viewBox="0 0 150 150">
               <title>pin</title>
               <path d="M133.3,0H11.2C4.8,0-0.4,5-0.4,11.2v124.1c0,6.2,5.2,11.2,11.6,11.2h1c21.9,0,42,11.6,52.4,30.2l0.1,0.1  c3.4,6.2,12.6,6.2,16,0l0.1-0.1c10.3-18.6,30.5-30.2,52.4-30.2h0.2c6.4,0,11.6-5,11.6-11.2V11.2C144.9,5,139.7,0,133.3,0z" />
+            </symbol>
+            <symbol class="icon-pin2" viewBox="0 0 20 20">
+              <path d="M17.211,3.39H2.788c-0.22,0-0.4,0.18-0.4,0.4v9.614c0,0.221,0.181,0.402,0.4,0.402h3.206v2.402c0,0.363,0.429,0.533,0.683,0.285l2.72-2.688h7.814c0.221,0,0.401-0.182,0.401-0.402V3.79C17.612,3.569,17.432,3.39,17.211,3.39M16.811,13.004H9.232c-0.106,0-0.206,0.043-0.282,0.117L6.795,15.25v-1.846c0-0.219-0.18-0.4-0.401-0.4H3.189V4.19h13.622V13.004z"></path>
             </symbol>
             <symbol id="icon-search" viewBox="0 0 32 32">
               <title>search</title>
@@ -213,13 +216,108 @@
         <div class="container">
           <div class="main">
             <header class="codrops-header">
-              <h1>Bretagne</h1>
+              <h1>Terraeneo-B</h1>
             </header>
             <div class="mall">
               <div class="surroundings">
                 <img class="surroundings__map" src="img/surroundings.svg" alt="Surroundings"/>
               </div>
               <div class="levels">
+                <div class="level level--1" aria-label="Level 1">
+                  <svg class="map map--1" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                    <title>Map Level 1</title>
+              
+                    <rect x="49.37" y="12.59" width="1200" height="800" class="map__ground" />
+    <!--                <path d="M 1187.28 12.59 V 350.52 H 855.37 v 72.64 h 180.58 V 787.41 H 627.81 l -73.41 -203 H 414.93 l -58.73 203 H 12.72 V 366.5 H 49.37 V 12.59 h 388 V 68.87 H 548.08 V 12.59 h 639.19 M 1200 0 H 535.36 V 56.28 H 450.09 V 0 H 36.65 V 353.91 H 0 V 800 H 365.8 l 2.64 -9.13 L 424.52 597 H 545.44 l 70.39 194.65 l 3 8.35 h 429.82 V 410.57 H 868.09 V 363.11 H 1200 V 0 h 0 Z" 
+                    class="map__outline" /> -->
+                    <!-- <path d="M49.37,12.59   l100,0  0,50  -100,0  0,-50 Z" class="map__outline" /> -->
+                    <!-- <rect x="49.37" y="12.59" width="1200" height="800" class="map__outline" /> -->
+                    <!-- <path d="M49.37,12.59 h1200 v800 h-1200z" class="map__outline" /> -->
+
+                    <rect x="150" y="150" width="250" height="250" class="map__space" data-space="1.01" />
+                    <rect x="150" y="400" width="250" height="250" class="map__space" data-space="1.02" />
+
+                    <rect x="1000" y="300" width="300" height="350" class="map__space" data-space="1.03" />
+                    <rect x="1000" y="675" width="300" height="150" class="map__space" data-space="1.04" />
+                    <rect x="800" y="675" width="200" height="150" class="map__space" data-space="1.05" />
+
+
+                    <rect x="450" y="475" width="125" height="150" class="map__space" data-space="1.06" />
+                    <rect x="450" y="325" width="125" height="150" class="map__space" data-space="1.07" />
+                    <rect x="450" y="175" width="125" height="150" class="map__space" data-space="1.09" />
+
+                    <rect x="675" y="475" width="125" height="150" class="map__space" data-space="1.10" />
+                    <rect x="675" y="325" width="125" height="150" class="map__space" data-space="1.08" />
+                    <rect x="675" y="175" width="125" height="150" class="map__space" data-space="1.11" />
+
+                    <!-- fleche -->
+                    <!--  <path d="M125 0 L75 100 L150 100" /> -->
+
+                  </svg>
+                  <div class="level__pins">
+                    <a class="pin pin--1-1" data-category="1" data-space="1.01" href="#" aria-label="Pin for Bouvines">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-2" data-category="1" data-space="1.02" href="#" aria-label="Pin for Béthune">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-3" data-category="1" data-space="1.03" href="#" aria-label="Pin for Raw Delight">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-4" data-category="1" data-space="1.04" href="#" aria-label="Pin for Raw Delight">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-5" data-category="2" data-space="1.05" href="#" aria-label="Pin for Raw Delight">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-6" data-category="4" data-space="1.06" href="#" aria-label="Pin for men toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-7" data-category="4" data-space="1.07" href="#" aria-label="Pin for women toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-8" data-category="3" data-space="1.08" href="#" aria-label="Pin for elevator">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--elevator"><use xlink:href="#icon-elevator"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-9" data-category="3" data-space="1.09" href="#" aria-label="Pin for stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--1-10" data-category="3" data-space="1.10" href="#" aria-label="Pin for emergency stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                  <!-- /level__pins -->
+                </div>
                 <div class="level level--2" aria-label="Level 2">
                   <svg class="map map--2" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
                     <title>Map Level 2</title>
@@ -240,46 +338,289 @@
                     <rect x="675" y="175" width="125" height="150" class="map__space" data-space="2.10" />
                   </svg>
                   <div class="level__pins">
-                    <a class="pin pin--2-1" data-category="1" data-space="2.01" href="#" aria-label="Pin for Cold Soup Kitchen">
+                    <a class="pin pin--2-1" data-category="1" data-space="2.01" href="#" aria-label="Pin Wasquehal">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--tomato"><use xlink:href="#icon-tomato"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
                       </span>
                     </a>
-                    <a class="pin pin--2-2" data-category="2" data-space="2.02" href="#" aria-label="Pin for Docu Dome">
+                    <a class="pin pin--2-2" data-category="1" data-space="2.02" href="#" aria-label="Pin for Lewarde">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--cinema"><use xlink:href="#icon-cinema"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
                       </span>
                     </a>
-                    <a class="pin pin--2-3" data-category="3" data-space="2.03" href="#" aria-label="Pin for Little Artist">
+                    <a class="pin pin--2-3" data-category="1" data-space="2.03" href="#" aria-label="Pin for Bray-dunes">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--paint-brush"><use xlink:href="#icon-paint-brush"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
                       </span>
                     </a>
-                    <a class="pin pin--2-4" data-category="4" data-space="2.04" href="#" aria-label="Pin for Sacred Symmetry">
+                    <a class="pin pin--2-4" data-category="1" data-space="2.04" href="#" aria-label="Pin for Tourcoing">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--modx"><use xlink:href="#icon-modx"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
                       </span>
                     </a>
-                    <a class="pin pin--2-5" data-category="4" data-space="2.05" href="#" aria-label="Pin for Hot Tub Festival">
+                    <a class="pin pin--2-5" data-category="4" data-space="2.05" href="#" aria-label="Pin for men toilets">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--droplet"><use xlink:href="#icon-droplet"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
                       </span>
                     </a>
-                    <a class="pin pin--2-6" data-category="2" data-space="2.06" href="#" aria-label="Pin for Love 2 Cook">
+                    <a class="pin pin--2-6" data-category="4" data-space="2.06" href="#" aria-label="Pin for women toilets">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--cupcake"><use xlink:href="#icon-cupcake"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
                       </span>
                     </a>
-                    <a class="pin pin--2-7" data-category="2" data-space="2.07" href="#" aria-label="Pin for Permaculture Hub">
+                    <a class="pin pin--2-7" data-category="3" data-space="2.07" href="#" aria-label="Pin for elevator">
                       <span class="pin__icon">
                         <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
-                        <svg class="icon icon--logo icon--leafcircle"><use xlink:href="#icon-leafcircle"></use></svg>
+                        <svg class="icon icon--logo icon--elevator"><use xlink:href="#icon-elevator"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--2-8" data-category="3" data-space="2.08" href="#" aria-label="Pin for stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--2-9" data-category="3" data-space="2.09" href="#" aria-label="Pin for emergency stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                  <!-- /level__pins -->
+                </div>
+                <div class="level level--3" aria-label="Level 3">
+                  <svg class="map map--3" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                    <title>Map Level 3</title>
+                    <rect x="49.37" y="12.59" width="1200" height="800" class="map__ground" />
+
+                    <rect x="150" y="150" width="250" height="250" class="map__space" data-space="3.01" />
+                    <rect x="150" y="400" width="250" height="250" class="map__space" data-space="3.02" />
+
+                    <rect x="850" y="150" width="250" height="250" class="map__space" data-space="3.03" />
+                    <rect x="850" y="400" width="250" height="250" class="map__space" data-space="3.04" />
+
+                    <rect x="450" y="475" width="125" height="150" class="map__space" data-space="3.05" />
+                    <rect x="450" y="325" width="125" height="150" class="map__space" data-space="3.06" />
+                    <rect x="450" y="175" width="125" height="150" class="map__space" data-space="3.08" />
+
+                    <rect x="675" y="475" width="125" height="150" class="map__space" data-space="3.09" />
+                    <rect x="675" y="325" width="125" height="150" class="map__space" data-space="3.07" />
+                    <rect x="675" y="175" width="125" height="150" class="map__space" data-space="3.10" />
+                  </svg>
+                  <div class="level__pins">
+                    <a class="pin pin--3-1" data-category="1" data-space="3.01" href="#" aria-label="Pin Lomme">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-2" data-category="1" data-space="3.02" href="#" aria-label="Pin for Bergues">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-3" data-category="1" data-space="3.03" href="#" aria-label="Pin for Wambrechies">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-4" data-category="1" data-space="3.04" href="#" aria-label="Pin for Roubaix">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-5" data-category="4" data-space="3.05" href="#" aria-label="Pin for men toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-6" data-category="4" data-space="3.06" href="#" aria-label="Pin for women toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-7" data-category="3" data-space="3.07" href="#" aria-label="Pin for elevator">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--elevator"><use xlink:href="#icon-elevator"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-8" data-category="3" data-space="3.08" href="#" aria-label="Pin for stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--3-9" data-category="3" data-space="3.09" href="#" aria-label="Pin for emergency stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                  <!-- /level__pins -->
+                </div>
+                <div class="level level--4" aria-label="Level 4">
+                  <svg class="map map--4" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                    <title>Map Level 4</title>
+                    <rect x="49.37" y="12.59" width="1200" height="800" class="map__ground" />
+
+                    <rect x="150" y="150" width="250" height="250" class="map__space" data-space="4.01" />
+                    <rect x="150" y="400" width="250" height="250" class="map__space" data-space="4.02" />
+
+                    <rect x="850" y="150" width="250" height="250" class="map__space" data-space="4.03" />
+                    <rect x="850" y="400" width="250" height="250" class="map__space" data-space="4.04" />
+
+                    <rect x="450" y="475" width="125" height="150" class="map__space" data-space="4.05" />
+                    <rect x="450" y="325" width="125" height="150" class="map__space" data-space="4.06" />
+                    <rect x="450" y="175" width="125" height="150" class="map__space" data-space="4.08" />
+
+                    <rect x="675" y="475" width="125" height="150" class="map__space" data-space="4.09" />
+                    <rect x="675" y="325" width="125" height="150" class="map__space" data-space="4.07" />
+                    <rect x="675" y="175" width="125" height="150" class="map__space" data-space="4.10" />
+                  </svg>
+                  <div class="level__pins">
+                    <a class="pin pin--4-1" data-category="1" data-space="4.01" href="#" aria-label="Pin Lille">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-2" data-category="1" data-space="4.02" href="#" aria-label="Pin for Arras">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-3" data-category="1" data-space="4.03" href="#" aria-label="Pin for Cambrai">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-4" data-category="1" data-space="4.04" href="#" aria-label="Pin for Dunkerque">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-5" data-category="4" data-space="4.05" href="#" aria-label="Pin for men toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-6" data-category="4" data-space="4.06" href="#" aria-label="Pin for women toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-7" data-category="3" data-space="4.07" href="#" aria-label="Pin for elevator">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--elevator"><use xlink:href="#icon-elevator"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-8" data-category="3" data-space="4.08" href="#" aria-label="Pin for stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--4-9" data-category="3" data-space="4.09" href="#" aria-label="Pin for emergency stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                  </div>
+                  <!-- /level__pins -->
+                </div>
+                <div class="level level--5" aria-label="Level 5">
+                  <svg class="map map--5" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
+                    <title>Map Level 4</title>
+                    <rect x="49.37" y="12.59" width="1200" height="800" class="map__ground" />
+
+                    <rect x="150" y="150" width="250" height="250" class="map__space" data-space="5.01" />
+                    <rect x="150" y="400" width="250" height="250" class="map__space" data-space="5.02" />
+
+                    <rect x="850" y="150" width="250" height="250" class="map__space" data-space="5.03" />
+                    <rect x="850" y="400" width="250" height="250" class="map__space" data-space="5.04" />
+
+                    <rect x="450" y="475" width="125" height="150" class="map__space" data-space="5.05" />
+                    <rect x="450" y="325" width="125" height="150" class="map__space" data-space="5.06" />
+                    <rect x="450" y="175" width="125" height="150" class="map__space" data-space="5.08" />
+
+                    <rect x="675" y="475" width="125" height="150" class="map__space" data-space="5.09" />
+                    <rect x="675" y="325" width="125" height="150" class="map__space" data-space="5.07" />
+                    <rect x="675" y="175" width="125" height="150" class="map__space" data-space="5.10" />
+                  </svg>
+                  <div class="level__pins">
+                    <a class="pin pin--5-1" data-category="1" data-space="5.01" href="#" aria-label="Pin Lille">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-2" data-category="1" data-space="5.02" href="#" aria-label="Pin for Arras">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-3" data-category="1" data-space="5.03" href="#" aria-label="Pin for Cambrai">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-4" data-category="1" data-space="5.04" href="#" aria-label="Pin for Dunkerque">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--star"><use xlink:href="#icon-star"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-5" data-category="4" data-space="5.05" href="#" aria-label="Pin for men toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-6" data-category="4" data-space="5.06" href="#" aria-label="Pin for women toilets">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--toilet"><use xlink:href="#icon-toilet"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-7" data-category="3" data-space="5.07" href="#" aria-label="Pin for elevator">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--elevator"><use xlink:href="#icon-elevator"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-8" data-category="3" data-space="5.08" href="#" aria-label="Pin for stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
+                      </span>
+                    </a>
+                    <a class="pin pin--5-9" data-category="3" data-space="5.09" href="#" aria-label="Pin for emergency stairs">
+                      <span class="pin__icon">
+                        <svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
+                        <svg class="icon icon--logo icon--exit"><use xlink:href="#icon-exit"></use></svg>
                       </span>
                     </a>
                   </div>
@@ -289,88 +630,90 @@
               <!-- /levels -->
             </div>
             <!-- /mall -->
-            <button class="boxbutton boxbutton--dark open-search" aria-label="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
+            <button id="search" class="boxbutton boxbutton--dark open-search" aria-label="Show search"><svg class="icon icon--search"><use xlink:href="#icon-search"></use></svg></button>
             <nav class="mallnav mallnav--hidden">
               <button class="boxbutton mallnav__button--up" aria-label="Go up"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-up"></use></svg></button>
               <button class="boxbutton boxbutton--dark mallnav__button--all-levels" aria-label="Back to all levels"><svg class="icon icon--stack"><use xlink:href="#icon-stack"></use></svg></button>
               <button class="boxbutton mallnav__button--down" aria-label="Go down"><svg class="icon icon--angle-down"><use xlink:href="#icon-angle-down"></use></svg></button>
             </nav>
-            <div class="content">
+            <div class="content ">
               <div class="content__item" data-space="1.01" data-category="1">
                 <h3 class="content__item-title">Salle Bouvines</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 6:30AM &mdash; 11:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 5738902</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p>
-                  <button ion-button>Le saviez-vous?</button>
-                  </p>
-                  <p class="content__desc">Salle de réunion - capacité : 3 personnes - Teléphone inclus.</p>
                 </div>
               </div>
               <div class="content__item" data-space="1.02" data-category="1">
                 <h3 class="content__item-title">Salle Béthune</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 7:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 7822786</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Salle de réunion - capacité : 6 personnes - Teléphone inclus.</p>
                 </div>
               </div>
               <div class="content__item" data-space="1.03" data-category="1">
                 <h3 class="content__item-title">Salle Calais</h3>
                 <div class="content__item-details">
-                  <p class="content__desc">Salle de réunion - Capacité : 20 personnes - Materiel : Teléphone, video-projecteur et tableau</p>
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">20</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
                 </div>
               </div>
               <div class="content__item" data-space="1.04" data-category="1">
                 <h3 class="content__item-title">Salle Zuydcoote</h3>
-                <div class="content__item-details">
-                  <p class="content__desc">Salle de réunion - capacité : 6 personnes - Teléphone inclus..</p>
-                  <p>
-                    <img class="content__item-details" src="img/salle-reunion1.jpg" alt="salle"/>
-                  </p>
-                </div>
-              </div>
-              <div class="content__item" data-space="1.05" data-category="2">
-                <h3 class="content__item-title">Salle Malo les bains</h3>
-                <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Horaires d'ouverture: </strong>Mardi et Jeudi, 13:00 &mdash; 14:00</span> 
-                    <span class="content__meta-item"><strong>Mail:</strong>ce-cic@gmail.com</span>
-                  </p>
-                  <p class="content__desc">Salle réservée au CE.</p>
-                </div>
-              </div>
-              <div class="content__item" data-space="1.06" data-category="4">
-                <h3 class="content__item-title">Toilettes Homme</h3>
-                <div class="content__item-details">
-                  <p class="content__desc">Lorem ipsum dolor sit amet.</p>
-                  <p>
-                    <img class="surroundings__map" src="img/wc.jpg" alt="salle"/>
-                  </p>
-                </div>
-              </div>
-              <div class="content__item" data-space="1.07" data-category="4">
-                <h3 class="content__item-title">Toilettes Femme</h3>
-                <div class="content__item-details">
-                  <p class="content__desc">Lorem ipsum dolor sit amet.</p>
-                </div>
-              </div>
-              <div class="content__item" data-space="1.08" data-category="3">
-                <h3 class="content__item-title">Ascenseur</h3>
-              </div>
-              <div class="content__item" data-space="1.09" data-category="3">
-                <h3 class="content__item-title">Escaliers</h3>
-              </div>
-              <div class="content__item" data-space="1.10" data-category="3">
-                <h3 class="content__item-title">Escaliers de secours</h3>
-              </div>
-
-              <div class="content__item" data-space="2.01" data-category="1">
-                <h3 class="content__item-title">Salle Milan</h3>
                 <div class="content__item-details">
                   <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
@@ -394,14 +737,95 @@
                   </p>
                 </div>
               </div>
-              <div class="content__item" data-space="2.02" data-category="2">
-                <h3 class="content__item-title">Salle Pragues</h3>
+              <div class="content__item" data-space="1.05" data-category="2">
+                <h3 class="content__item-title">Salle Malo les bains</h3>
+                <div class="content__item-details">
+                  <p class="content__meta">
+                    <span class="content__meta-item"><strong>Horaires d'ouverture: </strong>Mardi et Jeudi, 13:00 &mdash; 14:00</span> 
+                    <span class="content__meta-item"><strong>Mail:</strong>ce-cic@gmail.com</span>
+                  </p>
+                  <p class="content__desc">Salle réservée au CE.</p>
+                </div>
+              </div>
+              <div class="content__item" data-space="1.06" data-category="4">
+                <h3 class="content__item-title">Toilettes Homme</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="1.07" data-category="4">
+                <h3 class="content__item-title">Toilettes Femme</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="1.08" data-category="3">
+                <h3 class="content__item-title">Ascenseur</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/ascenseur.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="1.09" data-category="3">
+                <h3 class="content__item-title">Escaliers</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers.jpg" alt="salle"/>
+                  </p>
+                </div>                
+              </div>
+              <div class="content__item" data-space="1.10" data-category="3">
+                <h3 class="content__item-title">Escaliers de secours</h3>
+              <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers_secours.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+
+              <div class="content__item" data-space="2.01" data-category="1">
+                <h3 class="content__item-title">Salle Wasquehal</h3>
                 <div class="content__item-details">
                   <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
                     <div class="button-bar" style="padding: 10px; margin-top: 10px;">
                       <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
                         <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="2.02" data-category="2">
+                <h3 class="content__item-title">Salle Lewarde</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
                         <i class="icon ion-ios-people"></i>
                         Capacité
                       </div>
@@ -420,82 +844,7 @@
                 </div>
               </div>
               <div class="content__item" data-space="2.03" data-category="2">
-                <h3 class="content__item-title">Salle Athènes</h3>
-               <div class="content__item-details">
-                  <p class="content__desc">Salle de réunion.</p> 
-                  <p class="content__meta">
-                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">6</span>
-                        <i class="icon ion-ios-people"></i>
-                        Capacité
-                      </div>
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">✖</span>
-                        <i class="icon ion-monitor"></i>
-                        Écran 
-                      </div>
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">✔</span>
-                        <i class="icon ion-android-call"></i>
-                        Téléphone
-                      </div>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              <div class="content__item" data-space="2.04" data-category="3">
-                <h3 class="content__item-title">Salle Barcelone</h3>
-                <div class="content__item-details">
-                  <p class="content__desc">Salle de réunion.</p> 
-                  <p class="content__meta">
-                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">10</span>
-                        <i class="icon ion-ios-people"></i>
-                        Capacité
-                      </div>
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">✖</span>
-                        <i class="icon ion-monitor"></i>
-                        Écran 
-                      </div>
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">✔</span>
-                        <i class="icon ion-android-call"></i>
-                        Téléphone
-                      </div>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              <div class="content__item" data-space="2.05" data-category="1">
-                <h3 class="content__item-title">Salle Stockholm</h3>
-                <div class="content__item-details">
-                  <p class="content__desc">Salle de réunion.</p> 
-                  <p class="content__meta">
-                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">6</span>
-                        <i class="icon ion-ios-people"></i>
-                        Capacité
-                      </div>
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">✖</span>
-                        <i class="icon ion-monitor"></i>
-                        Écran 
-                      </div>
-                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
-                        <span class="notify-badge">✔</span>
-                        <i class="icon ion-android-call"></i>
-                        Téléphone
-                      </div>
-                    </div>
-                  </p>
-                </div>
-              </div>
-              <div class="content__item" data-space="2.06" data-category="1">
-                <h3 class="content__item-title">Salle Dublin</h3>
+                <h3 class="content__item-title">Salle Bray-dunes</h3>
                 <div class="content__item-details">
                   <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
@@ -519,156 +868,543 @@
                   </p>
                 </div>
               </div>
+              <div class="content__item" data-space="2.04" data-category="3">
+                <h3 class="content__item-title">Salle Tourcoing</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>>
+              </div>
+              <div class="content__item" data-space="2.05" data-category="1">
+                <h3 class="content__item-title">Toilettes Hommes</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="2.06" data-category="1">
+                <h3 class="content__item-title">Toilettes Femmes</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
               <div class="content__item" data-space="2.07" data-category="3">
                 <h3 class="content__item-title">Ascenseur</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/ascenseur.jpg" alt="salle"/>
+                  </p>
+                </div>
               </div>
               <div class="content__item" data-space="2.08" data-category="3">
                 <h3 class="content__item-title">Escaliers</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers.jpg" alt="salle"/>
+                  </p>
+                </div>
               </div>
               <div class="content__item" data-space="2.09" data-category="3">
                 <h3 class="content__item-title">Escaliers de secours</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers_secours.jpg" alt="salle"/>
+                  </p>
+                </div>
               </div>
               <div class="content__item" data-space="3.01" data-category="1">
-                <h3 class="content__item-title">Oolong House</h3>
+                <h3 class="content__item-title">Salle Lomme</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 8867298</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Sweet pepper; squash, parsnip sierra leone bologi peanut tomatillo. Broccoli Rabe chrysanthemum leaves florence fennel fluted pumpkin, sweet potato or kumara scallion. </p>
                 </div>
               </div>
               <div class="content__item" data-space="3.02" data-category="2">
-                <h3 class="content__item-title">Enlightend Path</h3>
+                <h3 class="content__item-title">Salle Bergues</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 7756989</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Glycine max tarhui, chocho valerianella locusta; cichorium endivia, cucumis sativus. Cyamopsis tetragonoloba - acmella oleracea. Lactuca sativa; cucurbita spp.</p>
                 </div>
               </div>
               <div class="content__item" data-space="3.03" data-category="3">
-                <h3 class="content__item-title">What makes us walk</h3>
+                <h3 class="content__item-title">Salle Wambrechies</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 8809098</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Valerianella locusta inula crithmoides. Nasturtium officinale; arctium lappa? Achillea millefolium eruca sativa benincasa hispida sagittaria latifolia telfairia occidentalis plantago major.</p>
                 </div>
               </div>
               <div class="content__item" data-space="3.04" data-category="3">
-                <h3 class="content__item-title">Your Last Shirt</h3>
+                <h3 class="content__item-title">Salle Roubaix</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 7:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 3365784</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Lens culinaris vigna mungo, smallanthus sonchifolius. Cicer arietinum eruca sativa; valerianella locusta.</p>
                 </div>
               </div>
               <div class="content__item" data-space="3.05" data-category="4">
-                <h3 class="content__item-title">Breathe</h3>
+                <h3 class="content__item-title">Toilettes Hommes</h3>
                 <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 4523213</span>
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
                   </p>
-                  <p class="content__desc">Physalis philadelphica. Benincasa hispida brassica napus napobrassica group lens culinaris abelmoschus esculentus.</p>
                 </div>
               </div>
               <div class="content__item" data-space="3.06" data-category="4">
-                <h3 class="content__item-title">Feel the Grass</h3>
+                <h3 class="content__item-title">Toilettes Femmes</h3>
                 <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 4768590</span>
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
                   </p>
-                  <p class="content__desc">Brassica rapa Chinensis group praecitrullus fistulosus pachyrhizus ahipa. Colocasia esculenta nasturtium officinale capsicum annuum grossum group, adansonia spp, hypochaeris radicata.</p>
                 </div>
               </div>
               <div class="content__item" data-space="3.07" data-category="4">
-                <h3 class="content__item-title">Star Gazer</h3>
+                <h3 class="content__item-title">Ascenceur</h3>
                 <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 6:30AM &mdash; 9:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 4456324</span>
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/ascenseur.jpg" alt="salle"/>
                   </p>
-                  <p class="content__desc">Cucumis anguria phaseolus coccineus lupinus mutabilis scorzonera hispanica cyperus esculentus.</p>
+                </div>
+              </div>
+              <div class="content__item" data-space="3.08" data-category="4">
+                <h3 class="content__item-title">Escaliers</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="3.09" data-category="4">
+                <h3 class="content__item-title">Escaliers de secours</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers_secours.jpg" alt="salle"/>
+                  </p>
                 </div>
               </div>
               <div class="content__item" data-space="4.01" data-category="1">
-                <h3 class="content__item-title">Cold Soup Kitchen</h3>
+                <h3 class="content__item-title">Salle Lille</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 11:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 6743987</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Manihot esculenta phytolacca americana corchorus olitorius, corchorus capsularis. Brassica rapa Pervidis or Komatsuna group dioscorea spp lepidium sativum, ipomoea aquatica - brassica rapa chinensis group spinacia oleracea. Phaseolus vulgaris macrotyloma uniflorum.</p>
                 </div>
               </div>
               <div class="content__item" data-space="4.02" data-category="2">
-                <h3 class="content__item-title">Docu Dome</h3>
+                <h3 class="content__item-title">Salle Arras</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 13:00PM &mdash; 03:00AM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 2289786</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Ipomoea aquatica smallanthus sonchifolius. The Docu Dome presents Sintel by the Blender Foundation.</p>
-                  <p class="content__desc">Book tickets <a href="http://tympanus.net/Development/SeatPreview/">here</a>.</p>
                 </div>
               </div>
               <div class="content__item" data-space="4.03" data-category="3">
-                <h3 class="content__item-title">Little Artist</h3>
+                <h3 class="content__item-title">Salle Cambrai</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 10:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 9987879</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Brassica oleracea Gemmifera group conopodium majus. Cichorium intybus brassica rapa subsp rapa brassica oleracea gemmifera group abelmoschus esculentus phaseolus vulgaris.</p>
                 </div>
               </div>
               <div class="content__item" data-space="4.04" data-category="4">
-                <h3 class="content__item-title">Space 16</h3>
+                <h3 class="content__item-title">Salle Dunkerque</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 8:30AM &mdash; 11:00PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 6658940</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Arctium lappa scorzonera hispanica pteridium aquilinum, athyrium esculentum celosia argentea arctium lappa brassica rapa chinensis group. Cucurbita spp.</p>
                 </div>
               </div>
               <div class="content__item" data-space="4.05" data-category="4">
-                <h3 class="content__item-title">Hot Tub Festival</h3>
+                <h3 class="content__item-title">Toilettes Hommes</h3>
                 <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
                   <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 7:30AM &mdash; 11:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 7843676</span>
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
                   </p>
-                  <p class="content__desc">Talinum fruticosum glycine max tarhui, chocho. Cyamopsis tetragonoloba crassocephalum spp lens culinaris. Vigna umbellata cucurbita spp vigna umbellata.</p>
                 </div>
               </div>
               <div class="content__item" data-space="4.06" data-category="2">
-                <h3 class="content__item-title">Love 2 Cook</h3>
+                <h3 class="content__item-title">Toilettes Femmes</h3>
                 <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 7:30AM &mdash; 09:00PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 7749036</span>
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
                   </p>
-                  <p class="content__desc">Vigna unguiculata subsp sesquipedalis vicia faba eruca sativa pisum sativum abelmoschus esculentus. Chenopodium album glycine max tarhui, chocho. Cordyline fruticosa apium graveolens sinapis alba.</p>
                 </div>
               </div>
               <div class="content__item" data-space="4.07" data-category="2">
-                <h3 class="content__item-title">Permaculture Hub</h3>
+                <h3 class="content__item-title">Ascenceur</h3>
                 <div class="content__item-details">
-                  <p class="content__meta">
-                    <span class="content__meta-item"><strong>Opening Hours:</strong> 7:30AM &mdash; 12:30PM</span> 
-                    <span class="content__meta-item"><strong>Phone:</strong> (0) 66 7833895</span>
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/ascenseur.jpg" alt="salle"/>
                   </p>
-                  <p class="content__desc">Brassica oleracea phaseolus coccineus talinum fruticosum capsicum annuum cucurbita spp. Raphanus sativus Longipinnatus group cucurbita spp, moringa oleifera lathyrus sativus crithmum maritimum.</p>
                 </div>
               </div>
+              <div class="content__item" data-space="4.08" data-category="2">
+                <h3 class="content__item-title">Escaliers</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="4.09" data-category="2">
+                <h3 class="content__item-title">Escaliers de secours</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers_secours.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.01" data-category="1">
+                <h3 class="content__item-title">Salle Lille</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.02" data-category="2">
+                <h3 class="content__item-title">Salle Arras</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.03" data-category="3">
+                <h3 class="content__item-title">Salle Cambrai</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.04" data-category="4">
+                <h3 class="content__item-title">Salle Dunkerque</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">6</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.05" data-category="4">
+                <h3 class="content__item-title">Toilettes Hommes</h3>
+                <div class="content__item-details">
+                  <p class="content__desc">Salle de réunion.</p> 
+                  <p class="content__meta">
+                    <div class="button-bar" style="padding: 10px; margin-top: 10px;">
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">3</span>
+                        <i class="icon ion-ios-people"></i>
+                        Capacité
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✖</span>
+                        <i class="icon ion-monitor"></i>
+                        Écran 
+                      </div>
+                      <div class="tab-item" style="color: rgba(100, 100, 100, 1);">
+                        <span class="notify-badge">✔</span>
+                        <i class="icon ion-android-call"></i>
+                        Téléphone
+                      </div>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.06" data-category="2">
+                <h3 class="content__item-title">Toilettes Femmes</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/wc.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.07" data-category="2">
+                <h3 class="content__item-title">Ascenceur</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/ascenseur.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.08" data-category="2">
+                <h3 class="content__item-title">Escaliers</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>
+              <div class="content__item" data-space="5.09" data-category="2">
+                <h3 class="content__item-title">Escaliers de secours</h3>
+                <div class="content__item-details">
+                  <p class="content__desc"></p>
+                  <p>
+                    <img class="building-image" src="img/escaliers_secours.jpg" alt="salle"/>
+                  </p>
+                </div>
+              </div>              
               <button class="boxbutton boxbutton--dark content__button content__button--hidden" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
             </div>
             <!-- content -->
@@ -676,7 +1412,7 @@
           <!-- /main -->
           <aside class="spaces-list" id="spaces-list">
             <div class="search">
-              <input class="search__input" placeholder="Search..." />
+              <input class="search__input" placeholder="Tapez votre recherche..." />
               <button class="boxbutton boxbutton--darker close-search" aria-label="Close details"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
             </div>
             <span class="label">
@@ -684,28 +1420,15 @@
               <label class="label__text">A - Z</label>
             </span>
             <ul class="list listMall grouped-by-category">
-
-
-
-              <li class="list__item" data-level="2" data-category="1" data-space="2.01"><a href="#" class="list__link">Salle Milan</a></li>
-              <li class="list__item" data-level="2" data-category="1" data-space="2.02"><a href="#" class="list__link">Salle Pragues</a></li>
-              <li class="list__item" data-level="2" data-category="1" data-space="2.03"><a href="#" class="list__link">Salle Athènes</a></li>
-              <li class="list__item" data-level="2" data-category="1" data-space="2.04"><a href="#" class="list__link">Salle Barcelone</a></li>
-
-              <li class="list__item" data-level="2" data-category="2" data-space="2.05"><a href="#" class="list__link">Salle Stokholm</a></li>
-
-              <li class="list__item" data-level="2" data-category="3" data-space="2.08"><a href="#" class="list__link">Ascenseur L0</a></li>
-              <li class="list__item" data-level="2" data-category="3" data-space="2.10"><a href="#" class="list__link">Escaliers de secours L0</a></li>
-              <li class="list__item" data-level="2" data-category="3" data-space="2.09"><a href="#" class="list__link">Escaliers L0</a></li>
-
-              <li class="list__item" data-level="2" data-category="4" data-space="2.06"><a href="#" class="list__link">Salle Dublin</a></li> 
-              <li class="list__item" data-level="2" data-category="4" data-space="2.07"><a href="#" class="list__link">Toilettes Femmes L0</a></li>
-
-
+              
               <li class="list__item" data-level="1" data-category="1" data-space="1.01"><a href="#" class="list__link">Salle Bouvines</a></li>
               <li class="list__item" data-level="1" data-category="1" data-space="1.02"><a href="#" class="list__link">Salle Béthune</a></li>
               <li class="list__item" data-level="1" data-category="1" data-space="1.03"><a href="#" class="list__link">Salle Calais</a></li>
               <li class="list__item" data-level="1" data-category="1" data-space="1.04"><a href="#" class="list__link">Salle Zuydcoote</a></li>
+              <li class="list__item" data-level="2" data-category="1" data-space="2.01"><a href="#" class="list__link">Salle Wasquehal</a></li>
+              <li class="list__item" data-level="2" data-category="1" data-space="2.02"><a href="#" class="list__link">Salle Lewarde</a></li>
+              <li class="list__item" data-level="2" data-category="1" data-space="2.03"><a href="#" class="list__link">Salle Bray-dunes</a></li>
+              <li class="list__item" data-level="2" data-category="1" data-space="2.04"><a href="#" class="list__link">Salle Tourcoing</a></li>
               <li class="list__item" data-level="3" data-category="1" data-space="3.01"><a href="#" class="list__link">Salle Lomme</a></li>
               <li class="list__item" data-level="4" data-category="1" data-space="4.01"><a href="#" class="list__link">Salle Lille</a></li>
               <li class="list__item" data-level="3" data-category="1" data-space="3.02"><a href="#" class="list__link">Salle Bergues</a></li>
@@ -714,22 +1437,41 @@
               <li class="list__item" data-level="3" data-category="1" data-space="3.04"><a href="#" class="list__link">Salle Roubaix</a></li>
               <li class="list__item" data-level="3" data-category="1" data-space="3.03"><a href="#" class="list__link">Salle Wambrechies</a></li>
               <li class="list__item" data-level="4" data-category="1" data-space="4.04"><a href="#" class="list__link">Salle Dunkerque</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.01"><a href="#" class="list__link">Salle A</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.02"><a href="#" class="list__link">Salle B</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.03"><a href="#" class="list__link">Salle C</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.04"><a href="#" class="list__link">Salle D</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.05"><a href="#" class="list__link">Salle E</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.06"><a href="#" class="list__link">Salle F</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.07"><a href="#" class="list__link">Salle G</a></li>
+              <li class="list__item" data-level="5" data-category="1" data-space="5.08"><a href="#" class="list__link">Salle H</a></li>
+
               <li class="list__item" data-level="1" data-category="2" data-space="1.05"><a href="#" class="list__link">Salle Malo les bains</a></li>
+
               <li class="list__item" data-level="1" data-category="3" data-space="1.08"><a href="#" class="list__link">Ascenseur L0</a></li>
               <li class="list__item" data-level="1" data-category="3" data-space="1.10"><a href="#" class="list__link">Escaliers de secours L0</a></li>
               <li class="list__item" data-level="1" data-category="3" data-space="1.09"><a href="#" class="list__link">Escaliers L0</a></li>
+              <li class="list__item" data-level="2" data-category="3" data-space="2.08"><a href="#" class="list__link">Escaliers L1</a></li>
+              <li class="list__item" data-level="2" data-category="3" data-space="2.07"><a href="#" class="list__link">Ascenceur L1</a></li>
               <li class="list__item" data-level="3" data-category="3" data-space="3.08"><a href="#" class="list__link">Escaliers L2</a></li>
               <li class="list__item" data-level="3" data-category="3" data-space="3.09"><a href="#" class="list__link">Escaliers de secours L2</a></li>
               <li class="list__item" data-level="3" data-category="3" data-space="3.07"><a href="#" class="list__link">Ascenceur L2</a></li>
               <li class="list__item" data-level="4" data-category="3" data-space="4.08"><a href="#" class="list__link">Escaliers L3</a></li>
               <li class="list__item" data-level="4" data-category="3" data-space="4.09"><a href="#" class="list__link">Escaliers de secours L3</a></li>
               <li class="list__item" data-level="4" data-category="3" data-space="4.07"><a href="#" class="list__link">Ascenceur L3</a></li>
+
+              <li class="list__item" data-level="2" data-category="4" data-space="2.05"><a href="#" class="list__link">Toilettes Hommes L1</a></li>
               <li class="list__item" data-level="1" data-category="4" data-space="1.06"><a href="#" class="list__link">Toilettes Hommes L0</a></li> 
               <li class="list__item" data-level="1" data-category="4" data-space="1.07"><a href="#" class="list__link">Toilettes Femmes L0</a></li>
+              <li class="list__item" data-level="2" data-category="4" data-space="2.06"><a href="#" class="list__link">Toilettes Femmes L1</a></li>
               <li class="list__item" data-level="3" data-category="4" data-space="3.05"><a href="#" class="list__link">Toilettes Hommes L2</a></li>
               <li class="list__item" data-level="4" data-category="4" data-space="4.05"><a href="#" class="list__link">Toilettes Hommes L3</a></li>
               <li class="list__item" data-level="3" data-category="4" data-space="3.06"><a href="#" class="list__link">Toilettes Femmes L2</a></li>
               <li class="list__item" data-level="4" data-category="4" data-space="4.06"><a href="#" class="list__link">Toilettes Femmes L3</a></li>
+
+
+
+
 
             </ul>
           </aside>

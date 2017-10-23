@@ -22,17 +22,17 @@
 
    <!--  <h3 style="padding:5px;">Quel bâtiment souhaitez-vous consulter?</h3> -->
 
-  <ion-list ng-repeat="chat in chats" style="  width: 50%; display: inline-block;">
-    <ion-item ng-if="$even" style="border-style: none;" ng-href="#/tab/{{chat.url}}">
-        <img class="building-image" ng-src="{{chat.face}}" >
+  <ion-list ng-repeat="building in buildings" style="  width: 50%; display: inline-block;">
+    <ion-item ng-if="$even" style="border-style: none;" ng-href="#/tab/{{building.url}}">
+        <img class="building-image" ng-src="{{building.face}}" >
       <p>
-        {{chat.name}}
+        {{building.name}}
       </p>
     </ion-item>
-    <ion-item ng-if="$odd" style="border-style: none;"  ng-href="#/tab/{{chat.url}}">
-      <img class="building-image" ng-src="{{chat.face}}">
+    <ion-item ng-if="$odd" style="border-style: none;"  ng-href="#/tab/{{building.url}}">
+      <img class="building-image" ng-src="{{building.face}}">
       <p>
-        {{chat.name}}
+        {{building.name}}
       </p>
     </ion-item>
   </ion-list>

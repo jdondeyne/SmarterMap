@@ -1,5 +1,6 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
+<<<<<<< HEAD
 .directive('focus', function($timeout) {
     return {
       link: function(scope, element, attrs) {
@@ -39,6 +40,9 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
 
 .controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
+=======
+
+>>>>>>> batiments
 
  console.log($stateParams);
 
@@ -46,7 +50,6 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
     callMain();
 
   });
-
 
 
   $scope.saviezVous = function(nomVille){
@@ -76,15 +79,24 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
         };
     })
 
-    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
+/*    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
         $scope.chat = Chats.get($stateParams.chatId);
-    })
+    })*/
 
+<<<<<<< HEAD
 
 .controller('BretagneCtrl', function($scope, $stateParams) {
 
     $scope.params = $stateParams;
     console.log($scope.params);
+=======
+    .controller('BretagneCtrl', function ($scope) {
+        $scope.$on("$ionicView.enter", function () {
+            callMain();
+        });
+    })
+
+>>>>>>> batiments
 
     $scope.clickOnLink = function(s){
        

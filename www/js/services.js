@@ -1,14 +1,22 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
+.factory('Buildings', function() {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
-  var chats = [{
+  var buildings = [{
     id: 0,
+<<<<<<< HEAD
     name: 'Lomme2',
     marker : 'L2',
     url: 'dash',
+=======
+    name: 'Lomme-2',
+    desc: 'Le batiment Lomme-2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
+    marker : 'L',
+    lastText: '4 étages',
+    url: 'lomme2',
+>>>>>>> batiments
     face: 'img/batiment-lomme2.png',
     headerImg: 'img/batiment-lomme@2x.png',
     coord : [
@@ -127,11 +135,11 @@ angular.module('starter.services', [])
     ]
   }, {
     id: 2,
-    name: 'Tereneo-A',
+    name: 'Terraneo-A',
     desc: 'Le Terraneo A est un batiment récemment construit au 102 rue des Templiers. Il accueille plusieurs équipes GBS/GTS. Dans ce batiment vous pourrez également trouver de nombreux espaces agiles.',
     marker : 'TA',
     lastText: '4 étages',
-    url: '#',
+    url: 'terraneo-a',
     face: "img/batiment-terraneo-a.png",
     headerImg: 'img/batiment-terraneo-a@2x.png',
     coord : [
@@ -155,11 +163,11 @@ angular.module('starter.services', [])
     ]
   }, {
     id: 3,
-    name: 'Tereneo-B',
+    name: 'Terraneo-B',
     desc: 'Le Terraneo B est le batiment voisin du Terraneo A situé dans la même rue. Il accueille les équipes GTS. Dans ce batiment vous pourrez également trouver de nombreux espaces agiles.',
     marker : 'TB',
     lastText: '4 étages',
-    url: '#',
+    url: 'terraneo-b',
     face: 'img/batiment-terraneo-b.png',
     headerImg: 'img/batiment-terraneo-b@2x.png',
     coord : [
@@ -185,15 +193,15 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return chats;
+      return buildings;
     },
-    remove: function(chat) {
-      chats.splice(chats.indexOf(chat), 1);
+    remove: function(building) {
+      buildings.splice(buildings.indexOf(building), 1);
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    get: function(buildingId) {
+      for (var i = 0; i < buildings.length; i++) {
+        if (buildings[i].id === parseInt(buildingId)) {
+          return buildings[i];
         }
       }
       return null;

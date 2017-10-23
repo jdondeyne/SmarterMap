@@ -62,21 +62,30 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
+    .state('tab.bretagne', {
+      url: '/bretagne',
       views: {
         'tab-chats': {
           templateUrl: 'templates/chat-detail.html',
           controller: 'ChatDetailCtrl'
+        'tab-bretagne': {
+          templateUrl: 'templates/tab-bretagne.html',
+          controller: 'BretagneCtrl'
         }
       }
     })
 
+<<<<<<< HEAD
     .state('tab.bretagne', {
       url: '/bretagne',
       params: {'bat' : null, 'salle' : null},
+=======
+>>>>>>> batiments
       views: {
         'tab-chats': {
           templateUrl: 'templates/tab-bretagne.html',
           controller: 'BretagneCtrl'
+
         }
       }
     })
