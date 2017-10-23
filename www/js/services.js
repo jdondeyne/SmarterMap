@@ -6,19 +6,13 @@ angular.module('starter.services', [])
   // Some fake testing data
   var buildings = [{
     id: 0,
-<<<<<<< HEAD
-    name: 'Lomme2',
-    marker : 'L2',
-    url: 'dash',
-=======
     name: 'Lomme-2',
     desc: 'Le batiment Lomme-2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
-    marker : 'L',
+    marker : 'L2',
     lastText: '4 étages',
     url: 'lomme2',
->>>>>>> batiments
     face: 'img/batiment-lomme2.png',
-    headerImg: 'img/batiment-lomme@2x.png',
+    headerImg: 'img/batiment-lomme2.png',
     coord : [
       {
         lng : 3.018193244934082,
@@ -96,7 +90,7 @@ angular.module('starter.services', [])
     marker : 'BR',
     url: 'bretagne',
     face: 'img/batiment-bretagne.png',
-    headerImg: 'img/batiment-bretagne@2x.png',
+    headerImg: 'img/batiment-bretagne.png',
     coord : [
       {
         lng : 3.0210404098033905,
@@ -141,7 +135,7 @@ angular.module('starter.services', [])
     lastText: '4 étages',
     url: 'terraneo-a',
     face: "img/batiment-terraneo-a.png",
-    headerImg: 'img/batiment-terraneo-a@2x.png',
+    headerImg: 'img/batiment-terraneo-a.png',
     coord : [
       {
         lng : 3.022018074989319,
@@ -169,7 +163,7 @@ angular.module('starter.services', [])
     lastText: '4 étages',
     url: 'terraneo-b',
     face: 'img/batiment-terraneo-b.png',
-    headerImg: 'img/batiment-terraneo-b@2x.png',
+    headerImg: 'img/batiment-terraneo-b.png',
     coord : [
       {
        

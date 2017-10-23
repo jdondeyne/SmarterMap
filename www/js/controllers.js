@@ -1,6 +1,5 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
-<<<<<<< HEAD
 .directive('focus', function($timeout) {
     return {
       link: function(scope, element, attrs) {
@@ -21,9 +20,9 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
     
 })
 
-.controller('SearchCtrl', function($scope, Chats, $state){
+.controller('SearchCtrl', function($scope, Buildings, $state){
 
-    $scope.building = Chats.all();
+    $scope.building = Buildings.all();
     $scope.searchData= {};
 
     $scope.openEtage = function(b, s){
@@ -39,11 +38,8 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 })
 
 
-.controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
-=======
 
   .controller('LommeCtrl', function($scope, $stateParams, $ionicPopup) {
->>>>>>> batiments
 
  console.log($stateParams);
 
@@ -66,36 +62,12 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
     })
 
     .controller('BuildingsCtrl', function ($scope, Buildings) {
-        // With the new view caching in Ionic, Controllers are only called
-        // when they are recreated or on app start, instead of every page change.
-        // To listen for when this page is active (for example, to refresh data),
-        // listen for the $ionicView.enter event:
-        //
-        //$scope.$on('$ionicView.enter', function(e) {
-        //});
-
         $scope.buildings = Buildings.all();
         $scope.remove = function (building) {
             Buildings.remove(building);
         };
     })
 
-/*    .controller('ChatDetailCtrl', function ($scope, $stateParams, Chats) {
-        $scope.chat = Chats.get($stateParams.chatId);
-    })*/
-
-<<<<<<< HEAD
-
-.controller('BretagneCtrl', function($scope, $stateParams) {
-
-    $scope.params = $stateParams;
-    console.log($scope.params);
-=======
-    .controller('BretagneCtrl', function ($scope) {
-        $scope.$on("$ionicView.enter", function () {
-            callMain();
-        });
-    })
 
     .controller('TerraneoaCtrl', function ($scope) {
         $scope.$on("$ionicView.enter", function () {
@@ -108,7 +80,11 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
             callMain();
         });
     })
->>>>>>> batiments
+
+.controller('BretagneCtrl', function($scope, $stateParams) {
+
+    $scope.params = $stateParams;
+    console.log($scope.params);
 
     $scope.clickOnLink = function(s){
        
@@ -550,10 +526,4 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
         }); //end map listener
 
-    })
-
-    .controller('AccountCtrl', function ($scope) {
-        $scope.settings = {
-            enableFriends: true
-        };
     });

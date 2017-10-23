@@ -62,6 +62,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     .state('tab.bretagne', {
       url: '/bretagne',
+      params: {'bat' : null, 'salle' : null},
       views: {
         'tab-bretagne': {
           templateUrl: 'templates/tab-bretagne.html',
@@ -70,14 +71,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     })
 
-<<<<<<< HEAD
-    .state('tab.bretagne', {
-      url: '/bretagne',
-      params: {'bat' : null, 'salle' : null},
-=======
+
     .state('tab.terraneo-a', {
       url: '/terraneo-a',
->>>>>>> batiments
       views: {
         'tab-terraneo-a': {
           templateUrl: 'templates/tab-terraneo-a.html',
@@ -115,17 +111,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       }
     } 
   });
-
-/*  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
-      }
-    }
-  });
-*/
 
 
   // if none of the above states are matched, use this as the fallback
