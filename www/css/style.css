@@ -903,6 +903,160 @@ button:focus {
     height: 100%;
 }
 
+
+.custom-window {
+	top: 30px;
+	max-width: 380px;
+	-webkit-transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: top 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	opacity: 0;
+	visibility: hidden;
+
+}
+	.custom-window.open .si-frame {
+	  overflow: visible; 
+	 
+	}
+
+	.si-shadow-frame {
+		 
+		box-shadow: none;
+	
+	  }
+
+	.custom-window.active {
+	  top: 0;
+	  opacity: 1;
+	  visibility: visible; 
+	}
+	.custom-window .si-content-wrapper {
+	  padding-bottom: 10px; 
+	  border-radius: 13px;
+	}
+	.custom-window .si-content {
+	  overflow: visible; 
+	}
+
+.custom-content {
+	position: relative;
+	max-height: inherit;
+	padding-top: 65px;
+	overflow: auto;
+	z-index: 2; 
+	
+}
+  
+  .custom-img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: 1; 
+	border-radius: 13px 13px 3px 3px;
+}
+  
+  .custom-header {
+	position: relative;
+	margin: 0;
+	padding: 0px;
+	padding-top: 10px;
+	/*background-color: #44433e;*/
+	color: #000000;
+	/*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);*/ 
+	font-size: x-large;
+}
+	.custom-header small {
+	  display: block;
+	  font-size: 0.50em;
+	  font-weight: 400;
+	  opacity: 0.75; 
+	}
+  
+  .custom-body {
+	padding: 0px;
+	background-color: #fff; 
+}
+	.custom-body p {
+	  margin: 0; 
+	  margin-bottom: 30px;
+	  margin-top: 10px;
+	}
+	.custom-body * + p {
+	  margin-top: 1em; 
+	}
+	/*.custom-body a {
+	  color: #60a295; 
+	}*/
+	/*.custom-body a:hover, .custom-body a:focus, .custom-body a:active {
+		color: #437369; 
+	}*/
+	
+	.building-in-button {
+		background-color : #6400FD;
+		border-radius: 80px;
+		color : #FFFFFF;
+		padding : 10px 65px;
+		margin-top: 15px;	
+	}
+
+	.building-in-button img{
+		vertical-align: text-bottom;
+		padding-left: 10px;
+	}
+
+	.building-in-button small {
+	
+		padding : 10px 15px;
+		
+	}
+
+   /* remove google logo and terms */
+   a[href^="http://maps.google.com/maps"]{display:none !important}
+   a[href^="https://maps.google.com/maps"]{display:none !important}
+   
+   .gmnoprint a, .gmnoprint span, .gm-style-cc {
+	   display:none;
+   }
+   .gmnoprint div {
+	   background:none !important;
+   }
+
+
+  .custom-close {
+	position: absolute;
+	top: 0;
+	right: -36px;
+	width: 36px;
+	height: 36px;
+	-webkit-transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+	border: 0;
+	background-color: rgba(68, 67, 62, 0.8);
+	color: #fff;
+	font-size: 1.5em;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+	cursor: pointer; 
+	border-radius: 5px;
+}
+	.custom-close:hover, .custom-close:focus, .custom-close:active {
+	  background-color: rgba(28, 28, 26, 0.8); 
+	}
+	  
+@media (min-width: 992px) {
+	.custom-window {
+	  max-width: 500px; }
+	.custom-content {
+	  padding-top: 140px; }
+	.custom-img {
+	  height: 160px; }
+	.custom-header,
+	.custom-body {
+	  padding: 5px 15px; } }
+
 .building-image {
  border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; width: 100%; height: 50%; 
 }

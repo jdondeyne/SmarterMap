@@ -14,5 +14,10 @@
     "www/lib",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "snazzy-info-window": "^1.1.0",
+    "handlebars": "^4.0.10",
+    "jquery": "jQuery#2.1"
+  }
 }
