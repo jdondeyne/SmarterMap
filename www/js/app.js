@@ -40,34 +40,29 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   // Each tab has its own nav history stack:
 
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.lomme2', {
+    url: '/lomme2',
     views: {
-      'tab-chats': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-lomme2': {
+        templateUrl: 'templates/tab-lomme2.html',
+        controller: 'LommeCtrl'
       }
     }
   })
 
-  .state('tab.chats', {
-      url: '/chats',
+  .state('tab.buildings', {
+      url: '/buildings',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        'tab-buildings': {
+          templateUrl: 'templates/tab-buildings.html',
+          controller: 'BuildingsCtrl'
         }
       }
     })
 
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
     .state('tab.bretagne', {
       url: '/bretagne',
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
         'tab-bretagne': {
           templateUrl: 'templates/tab-bretagne.html',
           controller: 'BretagneCtrl'
@@ -80,12 +75,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
       url: '/bretagne',
       params: {'bat' : null, 'salle' : null},
 =======
+    .state('tab.terraneo-a', {
+      url: '/terraneo-a',
 >>>>>>> batiments
       views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-bretagne.html',
-          controller: 'BretagneCtrl'
+        'tab-terraneo-a': {
+          templateUrl: 'templates/tab-terraneo-a.html',
+          controller: 'TerraneoaCtrl'
+        }
+      }
+    })
 
+    .state('tab.terraneo-b', {
+      url: '/terraneo-b',
+      views: {
+        'tab-terraneo-b': {
+          templateUrl: 'templates/tab-terraneo-b.html',
+          controller: 'TerraneobCtrl'
         }
       }
     })

@@ -42,6 +42,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 .controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
 =======
 
+  .controller('LommeCtrl', function($scope, $stateParams, $ionicPopup) {
 >>>>>>> batiments
 
  console.log($stateParams);
@@ -64,7 +65,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
     })
 
-    .controller('ChatsCtrl', function ($scope, Chats) {
+    .controller('BuildingsCtrl', function ($scope, Buildings) {
         // With the new view caching in Ionic, Controllers are only called
         // when they are recreated or on app start, instead of every page change.
         // To listen for when this page is active (for example, to refresh data),
@@ -73,9 +74,9 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
         //$scope.$on('$ionicView.enter', function(e) {
         //});
 
-        $scope.chats = Chats.all();
-        $scope.remove = function (chat) {
-            Chats.remove(chat);
+        $scope.buildings = Buildings.all();
+        $scope.remove = function (building) {
+            Buildings.remove(building);
         };
     })
 
@@ -96,6 +97,17 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
         });
     })
 
+    .controller('TerraneoaCtrl', function ($scope) {
+        $scope.$on("$ionicView.enter", function () {
+            callMain();
+        });
+    })
+
+    .controller('TerraneobCtrl', function ($scope) {
+        $scope.$on("$ionicView.enter", function () {
+            callMain();
+        });
+    })
 >>>>>>> batiments
 
     $scope.clickOnLink = function(s){
@@ -140,7 +152,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
     });
 })
 
-    .controller('MapCtrl', function ($scope, Chats) {
+    .controller('MapCtrl', function ($scope, Buildings) {
 
         //IOS API KEY = AIzaSyC9eUt14RtODdTmpwTqMkTAn4I8c1Vn40Q
 
@@ -491,7 +503,7 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
 
             //recuperation des batiments
-            $scope.building = Chats.all();
+            $scope.building = Buildings.all();
 
 
             for (i in $scope.building) {
