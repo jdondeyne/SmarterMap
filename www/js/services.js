@@ -87,6 +87,7 @@ angular.module('starter.services', [])
   {
     id: 1,
     name: 'Bretagne',
+    desc: 'Le Bretagne se situe au 163 bis de l\'Avenue de Bretagne. Ce batiment est multi-entreprise, vous trouverez une partie des équipes GBS au 1er étage de ce batiment. ',
     marker : 'Bretagne',
     url: 'bretagne',
     face: 'img/batiment-bretagne.png',
