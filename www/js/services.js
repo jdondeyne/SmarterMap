@@ -7,9 +7,7 @@ angular.module('starter.services', [])
   var chats = [{
     id: 0,
     name: 'Lomme2',
-    desc: 'Le batiment Lomme2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
-    marker : 'L',
-    lastText: '4 étages',
+    marker : 'L2',
     url: 'dash',
     face: 'img/batiment-lomme2.png',
     headerImg: 'img/batiment-lomme@2x.png',
@@ -30,15 +28,64 @@ angular.module('starter.services', [])
         lng : 3.0178579688072205,
         lat : 50.632750358181134
       }
+    ],
+    salles: [
+      {
+        name: "Zuydcoote",
+        lvl: "1",
+        num: "00004"
+      },
+      {
+        name: "Béthune",
+        lvl: "1",
+        num: "00024" 
+      },
+      {
+        name: "Bouvines",
+        lvl: "1",
+        num: "00028" 
+      },
+      {
+        name: "Bray-Dunes",
+        lvl: "2",
+        num: "01013" 
+      },
+      {
+        name: "Tourcoing",
+        lvl: "2",
+        num: "01015" 
+      },
+      {
+        name: "Lewarde",
+        lvl: "2",
+        num: "01047" 
+      },
+      {
+        name: "Wasquehal",
+        lvl: "2",
+        num: "01048" 
+      },
+      {
+        name: "Roubaix",
+        lvl: "3",
+        num: "02015" 
+      },
+      {
+        name: "Lomme",
+        lvl: "3",
+        num: "02050" 
+      },
+      {
+        name: "Lille",
+        lvl: "3",
+        num: "03050" 
+      }
     ]
-
-
-  }, {
+  }, 
+  {
     id: 1,
     name: 'Bretagne',
-    desc: 'Le Bretagne se situe au 163 bis de l\'Avenue de Bretagne. Ce batiment est multi-entreprise, vous trouverez une partie des équipes GBS au 1er étage de ce batiment. ',
-    marker : 'B',
-    lastText: '1 étage',
+    marker : 'BR',
     url: 'bretagne',
     face: 'img/batiment-bretagne.png',
     headerImg: 'img/batiment-bretagne@2x.png',
@@ -59,6 +106,24 @@ angular.module('starter.services', [])
         lng : 3.0213113129138947,
         lat : 50.634353375973745
       }
+    ],
+    salles : [
+      {
+        name: "Dublin",
+        lvl: "2",
+        num: "B.20.C" 
+      },
+      {
+        name: "Milan",
+        lvl: "2",
+        num: "A.05.H" 
+      },
+      {
+        name: "Prague",
+        lvl: "2",
+        num: "A.04.H" 
+      }
+     
     ]
   }, {
     id: 2,

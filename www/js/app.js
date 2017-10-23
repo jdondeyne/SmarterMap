@@ -72,6 +72,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
     .state('tab.bretagne', {
       url: '/bretagne',
+      params: {'bat' : null, 'salle' : null},
       views: {
         'tab-chats': {
           templateUrl: 'templates/tab-bretagne.html',
@@ -88,6 +89,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         controller: 'MapCtrl'
       }
     }
+  })
+  
+  .state('tab.search', {
+    url:'/search',
+    views:{
+      'tab-search': {
+        templateUrl: 'templates/tab-search.html',
+        controller: 'SearchCtrl'
+      }
+    } 
   });
 
 /*  .state('tab.account', {

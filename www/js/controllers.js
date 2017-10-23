@@ -1,10 +1,46 @@
 angular.module('starter.controllers', ['ionic', 'ngCordova'])
 
-.controller('IndexCtrl', function($scope, $stateParams) {
+.directive('focus', function($timeout) {
+    return {
+      link: function(scope, element, attrs) {
+  
+        $timeout(function() {
+          element[0].focus(); 
+        });
+      }
+    };
+  })
+
+
+.controller('NavController', function($scope, $state){
+    
+    $scope.showSearch = function(){
+        $state.go('tab.search');
+    }
+    
+})
+
+.controller('SearchCtrl', function($scope, Chats, $state){
+
+    $scope.building = Chats.all();
+    $scope.searchData= {};
+
+    $scope.openEtage = function(b, s){
+
+        console.log(b);
+        console.log(s);
+
+        $state.go('tab.bretagne', {'bat': b, 'salle': s});
+
+
+    };
 
 })
 
+
 .controller('DashCtrl', function($scope, $stateParams, $ionicPopup) {
+
+ console.log($stateParams);
 
   $scope.$on("$ionicView.enter", function() {
     callMain();
@@ -44,35 +80,53 @@ angular.module('starter.controllers', ['ionic', 'ngCordova'])
         $scope.chat = Chats.get($stateParams.chatId);
     })
 
-    .controller('BretagneCtrl', function ($scope) {
-        $scope.$on("$ionicView.enter", function () {
-            callMain();
-        });
 
+.controller('BretagneCtrl', function($scope, $stateParams) {
 
-    })
+    $scope.params = $stateParams;
+    console.log($scope.params);
 
-    /*   //cordova geolocation example, need permissions
-    
-    .controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
-      var options = {timeout: 10000, enableHighAccuracy: true};
-     
-      $cordovaGeolocation.getCurrentPosition(options).then(function(position){
-     
-        var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-     
-        var mapOptions = {
-          center: latLng,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-     
-        $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
-     
-      }, function(error){
-        console.log("Could not get location");
-      });
-    })*/
+    $scope.clickOnLink = function(s){
+       
+        var spacesListEl = document.getElementById('spaces-list');
+        // spaces list ul
+        var spacesEl = spacesListEl.querySelector('ul.list');
+        // all the spaces listed
+        var spaces = [].slice.call(spacesEl.querySelectorAll('.list__item > a.list__link'));
+
+       /* var list = document.getElementsByClassName('list__link');
+        var linkEl = null;
+
+       for(var i=0; i<list.length; i++){
+        
+            if(list[i].innerText.indexOf(s.name, 0) !== -1 ){
+                console.log("dans le if");
+                console.log(list[i]);
+                console.log(list[i].parentNode);
+
+                list[i].parentNode.fireEvent('on' + 'click');
+                
+            }
+        }*/
+
+        console.log(spaces[0].parentNode);
+        spaces[0].parentNode.click();
+    };
+
+    $scope.$on("$ionicView.enter", function() {
+
+        callMain();
+        console.log($scope.params);
+        if($scope.params['salle'] != null){
+
+            $scope.building = $scope.params['bat'];
+            $scope.salle = $scope.params['salle'];
+
+           // $scope.clickOnLink($scope.salle);
+        }
+        
+    });
+})
 
     .controller('MapCtrl', function ($scope, Chats) {
 
