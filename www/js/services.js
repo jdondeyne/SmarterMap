@@ -8,7 +8,7 @@ angular.module('starter.services', [])
     id: 0,
     name: 'Lomme-2',
     desc: 'Le batiment Lomme-2 est situé au 6 avenue des Saules. c\'est au 3eme étage du batiment que se trouve la direction et les équipes de recrutement. Le reste du batiment est occupé par les salariés de l\'entité GBS',
-    marker : 'L2',
+    marker : 'Lomme 2',
     lastText: '4 étages',
     url: 'lomme2',
     face: 'img/batiment-lomme2.png',
@@ -87,7 +87,7 @@ angular.module('starter.services', [])
   {
     id: 1,
     name: 'Bretagne',
-    marker : 'BR',
+    marker : 'Bretagne',
     url: 'bretagne',
     face: 'img/batiment-bretagne.png',
     headerImg: 'img/batiment-bretagne.png',

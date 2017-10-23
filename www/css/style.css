@@ -1018,7 +1018,7 @@ button:focus {
 		background-color : #6400FD;
 		border-radius: 80px;
 		color : #FFFFFF;
-		padding: 10px 50px;
+		padding: 10px 35px;
 		margin-top: 15px;	
 	}
 
@@ -1031,6 +1031,27 @@ button:focus {
 	
 		padding : 10px 15px;
 		
+	}
+
+	.mapCenterButton{
+		background-color : #6748CC;
+		color: #6748CC;
+		border : 2px solid #6748CC;
+		border-radius: 4px;
+		cursor: pointer;
+		margin-bottom: 22px;
+		text-align: center;
+		opacity: 0.75;
+	
+
+	}
+
+	.icon-centerMap{
+		font-size: 35px;
+		margin: 5px;
+		padding : 0;
+		color: white;
+		margin-bottom: 10px;
 	}
 
    /* remove google logo and terms */
@@ -1256,6 +1277,7 @@ button:focus {
 
 	.searchName {
 		color : #5B5A57;
+		font-weight: bold;
 	}
 
 	.searchNum {
@@ -1265,6 +1287,11 @@ button:focus {
 
 	.searchBadge{
 		text-align: center;
+	}
+
+	.tabs .tab-item .badge.badge-calm, .badge.badge-grey {
+		background-color: #dadada;
+		color: #999999;
 	}
 
 
