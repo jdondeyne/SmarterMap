@@ -2,10 +2,10 @@
     <ion-nav-buttons side="primary" >
        <div class="bar bar-header item-input-inset">
            <label class="item-input-wrapper textbox-search" >
-               <i class="icon ion-ios-search placeholder-icon"></i>
+               <i class="iconSearchBar icon ion-ios-search placeholder-icon"></i>
                <input  class="searchText" ng-model="searchData.motif" type="text" placeholder="Rechercher une salle..." focus>
            </label>
-           <i class="icon ion-android-close" ng-click="searchData.motif = ''"></i>
+           <i class="iconSearchBar icon ion-android-close" ng-click="searchData.motif = ''"></i>
        </div>
        
    </ion-nav-buttons>
@@ -13,7 +13,7 @@
 <ion-content>
     <h3 class="searchTitle">Salles de réunion</h3>
     <div class="searchBloc" ng-repeat="b in building ">
-        <div class="row" ng-repeat="s in filtered = (b.salles | orderBy:searchNum | filter:{name:searchData.motif}) ">
+        <div class="row" ng-repeat="s in filtered = (b.salles | orderBy:searchNum | filter:{name:searchData.motif})" ng-click="openEtage(b, s)">
             <div class="col searchName">{{s.name}}</div>
             <div class="col searchBadge"><span class="badge badge-assertive">{{b.marker}}</span></div> 
             <div class="col searchNum">Lvl {{s.lvl}} / {{s.num}}</div>
